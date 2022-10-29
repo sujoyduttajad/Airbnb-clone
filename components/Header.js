@@ -16,7 +16,7 @@ const Header = () => {
 
       {/* Middle Container - Search bar */}
       <div>
-        <input type="text" />
+        <input type="text" placeholder="Start your search" />
       </div>
 
       {/* Right Container */}
