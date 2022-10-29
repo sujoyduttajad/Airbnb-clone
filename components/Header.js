@@ -16,15 +16,18 @@ const Header = () => {
       </div>
 
       {/* Middle Container - Search bar */}
-      <div className="flex items-center justify-between md:border-2 rounded-full px-3 py-2">
+      <div 
+        className="flex items-center justify-between md:border-2 rounded-full
+        py-2 md:shadow-sm"
+      >
         <input
-          className="flex-grow pl-1 bg-transparent text-gray-500 outline-none"
+          className="flex-grow pl-5 bg-transparent text-sm text-gray-500 placeholder-gray-400 outline-none"
           type="text"
           placeholder="Start your search"
         />
         <SearchIcon
           className="hidden md:inline-flex h-8 bg-red-400 text-white 
-          rounded-full p-2 cursor-pointer"
+          rounded-full p-2 cursor-pointer md:mx-2"
         />
       </div>
 
