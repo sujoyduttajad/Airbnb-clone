@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { SearchIcon } from "@heroicons/react/solid";
+import { GlobeAltIcon, SearchIcon } from "@heroicons/react/solid";
 
 const Header = () => {
   return (
@@ -32,7 +32,10 @@ const Header = () => {
       </div>
 
       {/* Right Container */}
-      <div></div>
+      <div className="flex items-center justify-end space-x-4 text-gray-500 ">
+        <p>Become a host</p>
+        <GlobeAltIcon className="h-6" />
+      </div>
     </div>
   );
 };
