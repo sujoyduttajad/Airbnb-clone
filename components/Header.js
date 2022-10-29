@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { SearchIcon } from '@heroicons/react/solid'
+import { SearchIcon } from "@heroicons/react/solid";
 
 const Header = () => {
   return (
@@ -16,9 +16,12 @@ const Header = () => {
       </div>
 
       {/* Middle Container - Search bar */}
-      <div className="flex">
+      <div className="flex items-center justify-between md:border-2 rounded-full px-3 py-2">
         <input type="text" placeholder="Start your search" />
-        <SearchIcon className="h-8 bg-red-400 text-white rounded-full p-2 cursor-pointer" />
+        <SearchIcon 
+          className="hidden md:inline-flex h-8 bg-red-400 text-white 
+          rounded-full p-2 cursor-pointer" 
+        />
       </div>
 
       {/* Right Container */}
