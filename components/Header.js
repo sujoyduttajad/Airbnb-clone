@@ -1,6 +1,11 @@
 import Image from "next/image";
 import React from "react";
-import { GlobeAltIcon, SearchIcon } from "@heroicons/react/solid";
+import {
+  GlobeAltIcon,
+  MenuIcon,
+  SearchIcon,
+  UserCircleIcon,
+} from "@heroicons/react/solid";
 
 const Header = () => {
   return (
@@ -16,7 +21,7 @@ const Header = () => {
       </div>
 
       {/* Middle Container - Search bar */}
-      <div 
+      <div
         className="flex items-center justify-between md:border-2 rounded-full
         py-2 md:shadow-sm"
       >
@@ -35,6 +40,10 @@ const Header = () => {
       <div className="flex items-center justify-end space-x-4 text-gray-500 ">
         <p>Become a host</p>
         <GlobeAltIcon className="h-6" />
+        <div className="flex items-center space-x-2 border-2 p-2 rounded-full">
+          <MenuIcon />
+          <UserCircleIcon />
+        </div>
       </div>
     </div>
   );
