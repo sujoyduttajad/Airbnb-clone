@@ -10,7 +10,10 @@ const Banner = () => {
         objectFit="cover"
       />
       <div className="absolute top-1/2 w-full text-center">
-        <p className="text-sm">Not sure where to go? Perfect.</p>
+        <p className="text-sm sm:text-lg">Not sure where to go? Perfect.</p>
+        <button className="text-purple-500 bg-white px-10 py-4 shadow-md rounded-full">
+          I'm flexible
+        </button>
       </div>
     </div>
   );
