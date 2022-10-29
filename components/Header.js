@@ -17,10 +17,14 @@ const Header = () => {
 
       {/* Middle Container - Search bar */}
       <div className="flex items-center justify-between md:border-2 rounded-full px-3 py-2">
-        <input type="text" placeholder="Start your search" />
-        <SearchIcon 
+        <input
+          className="flex-grow pl-1 bg-transparent text-gray-500 outline-none"
+          type="text"
+          placeholder="Start your search"
+        />
+        <SearchIcon
           className="hidden md:inline-flex h-8 bg-red-400 text-white 
-          rounded-full p-2 cursor-pointer" 
+          rounded-full p-2 cursor-pointer"
         />
       </div>
 
