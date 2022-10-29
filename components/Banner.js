@@ -9,6 +9,9 @@ const Banner = () => {
         layout="fill"
         objectFit="cover"
       />
+      <div className="absolute top-1/2 w-full text-center">
+        <p className="text-sm">Not sure where to go? Perfect.</p>
+      </div>
     </div>
   );
 };
