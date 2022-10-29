@@ -38,11 +38,11 @@ const Header = () => {
 
       {/* Right Container */}
       <div className="flex items-center justify-end space-x-4 text-gray-500 ">
-        <p>Become a host</p>
-        <GlobeAltIcon className="h-6" />
+        <p className="hidden md:inline">Become a host</p>
+        <GlobeAltIcon className="h-6 cursor-pointer" />
         <div className="flex items-center space-x-2 border-2 p-2 rounded-full">
-          <MenuIcon />
-          <UserCircleIcon />
+          <MenuIcon className="h-6" />
+          <UserCircleIcon className="h-6" />
         </div>
       </div>
     </div>
