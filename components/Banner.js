@@ -1,9 +1,16 @@
-import React from 'react'
+import React from "react";
+import Image from "next/image";
 
 const Banner = () => {
   return (
-    <div>Banner</div>
-  )
-}
+    <div className="relative h-[300px] sm:h-[400px] lg:h-[500px] xl:h-[600px] 2xl:h-[900px]">
+      <Image
+        src="https://links.papareact.com/0fm"
+        layout="fill"
+        objectFit="cover"
+      />
+    </div>
+  );
+};
 
-export default Banner
+export default Banner;
