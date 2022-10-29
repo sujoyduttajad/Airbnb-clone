@@ -3,11 +3,10 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div>
-      <h1>Header</h1>
+    <div className="sticky">
 
       {/* Left Container */}
-      <div className="relative">
+      <div className="relative flex items-center h-10 cursor-pointer my-auto">
         <Image
           src="https://links.papareact.com/qd3"
           layout="fill"
