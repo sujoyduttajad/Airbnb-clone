@@ -7,7 +7,7 @@ const Header = () => {
       <h1>Header</h1>
 
       {/* Left Container */}
-      <div>
+      <div className="relative">
         <Image
           src="https://links.papareact.com/qd3"
           layout="fill"
