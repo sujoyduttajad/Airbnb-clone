@@ -3,7 +3,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="sticky">
+    <div className="sticky top-0 z-100 grid grid-cols-3 bg-white shadow-md py-5 px-5">
 
       {/* Left Container */}
       <div className="relative flex items-center h-10 cursor-pointer my-auto">
