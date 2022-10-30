@@ -1,6 +1,22 @@
 import Head from "next/head";
 import Banner from "../components/Banner";
 import Header from "../components/Header";
+import fsPromises from 'fs/promises';
+import path from 'path'
+import Cities from "../cities.json"
+
+// This is running inside a server
+export async function getStaticProps() {
+  const filePath = path.join(process.cwd(), 'cities.json');
+  const jsonData = await fsPromises.readFile(filePath);
+  const exploreData = JSON.parse(jsonData)
+ 
+  return {
+    props: {
+      exploreData
+    }
+  }
+}
 
 export default function Home({ exploreData }) {
   console.log(exploreData);
@@ -27,16 +43,5 @@ export default function Home({ exploreData }) {
   );
 }
 
-// This is running inside a server
-export async function getStaticProps() {
-  const exploreData = await fetch("../cities.json").then(
-    (res) => res.json()
-  );
- 
-  return {
-    props: {
-      exploreData
-    }
-  }
-}
+
 
