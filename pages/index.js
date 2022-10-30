@@ -34,9 +34,9 @@ export default function Home({ exploreData }) {
       <main className="max-w-7xl mx-auto px-8 sm:px-16">
         <section className="pt-6">
           <h2 className="text-4xl font-semibold pb-5">Explore Nearby</h2>
-          {/* {exploreData !== undefined && exploreData.content.detailed.map((item) => (
-            <h1>{item.city}</h1>
-          ))} */}
+          {exploreData.nearbyCities?.map((item, index) => (
+            <h1 key={index}>{item.location}</h1>
+          ))}
         </section>
       </main>
     </div>
