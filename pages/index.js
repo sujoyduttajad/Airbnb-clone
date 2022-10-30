@@ -1,21 +1,22 @@
 import Head from "next/head";
 import Banner from "../components/Banner";
 import Header from "../components/Header";
-import fsPromises from 'fs/promises';
-import path from 'path'
-import Cities from "../cities.json"
+import fsPromises from "fs/promises";
+import path from "path";
+import Cities from "../cities.json";
+import SmallCard from "../components/SmallCard";
 
 // This is running inside a server
 export async function getStaticProps() {
-  const filePath = path.join(process.cwd(), 'cities.json');
+  const filePath = path.join(process.cwd(), "cities.json");
   const jsonData = await fsPromises.readFile(filePath);
-  const exploreData = JSON.parse(jsonData)
- 
+  const exploreData = JSON.parse(jsonData);
+
   return {
     props: {
-      exploreData
-    }
-  }
+      exploreData,
+    },
+  };
 }
 
 export default function Home({ exploreData }) {
@@ -35,13 +36,15 @@ export default function Home({ exploreData }) {
         <section className="pt-6">
           <h2 className="text-4xl font-semibold pb-5">Explore Nearby</h2>
           {exploreData.nearbyCities?.map((item, index) => (
-            <h1 key={index}>{item.location}</h1>
+            <SmallCard
+              key={index}
+              img={item.img}
+              location={item.location}
+              distance={item.distance}
+            />
           ))}
         </section>
       </main>
     </div>
   );
 }
-
-
-
