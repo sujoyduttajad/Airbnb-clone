@@ -20,7 +20,7 @@ export async function getStaticProps() {
 }
 
 export default function Home({ exploreData }) {
-  console.log(exploreData);
+
   return (
     <div>
       <Head>
