@@ -3,8 +3,8 @@ import Banner from "../components/Banner";
 import Header from "../components/Header";
 import fsPromises from "fs/promises";
 import path from "path";
-import Cities from "../cities.json";
 import SmallCard from "../components/SmallCard";
+import MediumCard from "../components/MediumCard";
 
 // This is running inside a server
 export async function getStaticProps() {
@@ -20,7 +20,6 @@ export async function getStaticProps() {
 }
 
 export default function Home({ exploreData }) {
-
   return (
     <div>
       <Head>
@@ -48,6 +47,11 @@ export default function Home({ exploreData }) {
         </section>
         <section>
           <h2 className="text-4xl font-semibold py-8">Live Anywhere</h2>
+          <div>
+            {exploreData.getaways?.map((item, index) => (
+              <MediumCard key={index} img={item.img} title={item.title} />
+            ))}
+          </div>
         </section>
       </main>
     </div>
