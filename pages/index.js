@@ -6,6 +6,7 @@ import path from "path";
 import SmallCard from "../components/SmallCard";
 import MediumCard from "../components/MediumCard";
 import LargeCard from "../components/LargeCard";
+import Footer from "../components/Footer";
 
 // This is running inside a server
 export async function getStaticProps() {
@@ -65,6 +66,8 @@ export default function Home({ exploreData }) {
             buttonText="Get Inspired"
           />
         </section>
+        {/* Footer */}
+        <Footer />
       </main>
     </div>
   );
