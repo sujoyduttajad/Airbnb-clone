@@ -42,7 +42,7 @@ const Header = () => {
 
       {/* Right Container */}
       <div className="flex items-center justify-end space-x-4 text-gray-500 ">
-        <p className="hidden font-medium md:inline cursor-pointer py-2 px-3 hover:bg-gray-100 rounded-full">
+        <p className="hidden font-medium md:inline cursor-pointer py-2 px-3 mx-1 hover:bg-gray-100 rounded-full">
           Become a host
         </p>
         <GlobeAltIcon className="h-6 cursor-pointer hover:bg-gray-100 rounded-full" />
