@@ -59,7 +59,12 @@ export default function Home({ exploreData }) {
         {/* Large Card */}
         <section>
           <div>
-            <LargeCard />
+            <LargeCard
+              img="https://links.parareact.com/4cj"
+              title="The Greatest Outdoors"
+              description="Wishlist curated by Airbnb"
+              buttonText="Get Inspired"
+            />
           </div>
         </section>
       </main>
