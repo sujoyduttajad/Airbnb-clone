@@ -6,7 +6,11 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'sans': ['Airbnb Cereal', 'Helvetica', 'Arial', 'sans-serif']
+      }
+    },
   },
   plugins: [
     require('tailwind-scrollbar-hide')
