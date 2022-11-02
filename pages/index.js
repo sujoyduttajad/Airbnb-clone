@@ -66,9 +66,8 @@ export default function Home({ exploreData }) {
             buttonText="Get Inspired"
           />
         </section>
-        {/* Footer */}
-        <Footer />
       </main>
+      <Footer />
     </div>
   );
 }
