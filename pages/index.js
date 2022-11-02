@@ -58,14 +58,12 @@ export default function Home({ exploreData }) {
         </section>
         {/* Large Card */}
         <section>
-          <div>
-            <LargeCard
-              img="https://links.papareact.com/4cj"
-              title="The Greatest Outdoors"
-              description="Wishlist curated by Airbnb"
-              buttonText="Get Inspired"
-            />
-          </div>
+          <LargeCard
+            img="https://links.papareact.com/4cj"
+            title="The Greatest Outdoors"
+            description="Wishlist curated by Airbnb"
+            buttonText="Get Inspired"
+          />
         </section>
       </main>
     </div>
