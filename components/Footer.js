@@ -13,7 +13,7 @@ const Footer = () => {
         lg:space-y-0 space-y-10 lg:px-32 lg:py-14 px-10 py-12 bg-gray-100 text-gray-600"
       >
         <div className="space-y-4 text-xs text-gray-800 pr-5">
-          <h5 className="font-bold capitalize">AIRBNB</h5>
+          <h5 className="text-gray-600 font-semibold capitalize text-lg tracking-wide">Airbnb</h5>
           <p>How Airbnb works</p>
           <p>Newsroom</p>
           <p>Investors</p>
@@ -21,7 +21,9 @@ const Footer = () => {
           <p>Airbnb Plus</p>
         </div>
         <div className="space-y-4 text-xs text-gray-800 pr-5">
-          <h5 className="font-bold capitalize">COMMUNITY</h5>
+          <h5 className="text-gray-600 font-semibold capitalize text-lg tracking-wide">
+            Community
+          </h5>
           <p>Accessibility</p>
           <p>Visit our community forum</p>
           <p>Airbnb.org</p>
@@ -29,7 +31,9 @@ const Footer = () => {
           <p>Combat discrimination</p>
         </div>
         <div className="space-y-4 text-xs text-gray-800 pr-5">
-          <h5 className="font-bold capitalize">HOSTING</h5>
+          <h5 className="text-gray-600 font-semibold capitalize text-lg tracking-wide">
+            Hosting
+          </h5>
           <p>Try Hosting</p>
           <p>AirCover for Hosts</p>
           <p>Explore hosting resources</p>
@@ -38,7 +42,9 @@ const Footer = () => {
           <p>Terms and Conditions</p>
         </div>
         <div className="space-y-4 text-xs text-gray-800">
-          <h5 className="font-bold capitalize">SUPPORT</h5>
+          <h5 className="text-gray-600 font-semibold capitalize text-lg tracking-wide">
+            Support
+          </h5>
           <p>Help Centre</p>
           <p>AirCover</p>
           <p>Safety Information</p>
