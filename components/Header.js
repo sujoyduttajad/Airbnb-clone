@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import {
   GlobeAltIcon,
   MenuIcon,
@@ -9,6 +9,8 @@ import {
 import Link from "next/link";
 
 const Header = () => {
+  const [searchInput, setSearchInput] = useState();
+
   return (
     <div className="sticky top-0 z-50 grid grid-cols-3 bg-white shadow-md p-5 md:px-10">
       {/* Left Container */}
@@ -30,9 +32,11 @@ const Header = () => {
         py-2 md:shadow-sm"
       >
         <input
-          className="flex-grow pl-5 bg-transparent text-sm text-gray-500 placeholder-gray-400 outline-none"
+          className="flex-grow pl-5 bg-transparent text-sm text-gray-500 
+          placeholder-gray-400 outline-none"
           type="text"
           placeholder="Start your search"
+          onChange={(e) => setSearchInput(e.target.value)}
         />
         <SearchIcon
           className="hidden md:inline-flex h-8 bg-red-400 text-white 
