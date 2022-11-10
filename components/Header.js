@@ -7,11 +7,20 @@ import {
   UserCircleIcon,
 } from "@heroicons/react/solid";
 import Link from "next/link";
-import 'react-date-range/dist/styles.css'; // main style file
-import 'react-date-range/dist/theme/default.css'; // theme css file
+import "react-date-range/dist/styles.css"; // main style file
+import "react-date-range/dist/theme/default.css"; // theme css file
+import { DateRangePicker } from "react-date-range";
 
 const Header = () => {
   const [searchInput, setSearchInput] = useState();
+  const [startDate, setStartDate] = useState(new Date());
+  const [endDate, setEndDate] = useState(new Date());
+
+  const selectionRange = {
+    startDate: startDate,
+    endDate: endDate,
+    key: "Selection",
+  };
 
   return (
     <div className="sticky top-0 z-50 grid grid-cols-3 bg-white shadow-md p-5 md:px-10">
@@ -61,13 +70,16 @@ const Header = () => {
         </div>
       </div>
 
-      {
-        searchInput && (
-          <div>
-
-          </div>
-        )
-      }
+      {searchInput && (
+        <div>
+          <DateRangePicker
+            ranges={[selectionRange]}
+            minDate={new Date()}
+            rangeColors={["#FD5B61"]}
+            
+          />
+        </div>
+      )}
     </div>
   );
 };
