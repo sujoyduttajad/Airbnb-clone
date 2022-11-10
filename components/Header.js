@@ -50,12 +50,12 @@ const Header = () => {
 
       {/* Middle Container - Search bar */}
       <div
-        className="flex items-center justify-between md:border-2 rounded-full
-        py-2 md:shadow-sm"
+        className={`flex items-center justify-between md:border-2 rounded-full
+        py-2 md:shadow-sm hover:border-red-400 ${searchInput ? 'border-red-400' : ''}`}
       >
         <input
           className="flex-grow pl-5 bg-transparent text-sm text-gray-500 
-          placeholder-gray-400 outline-none active:outline-red-400"
+          placeholder-gray-400 outline-none"
           type="text"
           placeholder="Start your search"
           onChange={(e) => setSearchInput(e.target.value)}
