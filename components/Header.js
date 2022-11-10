@@ -29,6 +29,10 @@ const Header = () => {
     setEndDate(ranges.selection.endDate);
   };
 
+  const resetInput = () => {
+    setSearchInput("");
+  };
+
   return (
     <div className="sticky top-0 z-50 grid grid-cols-3 bg-white shadow-md p-5 md:px-10">
       {/* Left Container */}
@@ -51,7 +55,7 @@ const Header = () => {
       >
         <input
           className="flex-grow pl-5 bg-transparent text-sm text-gray-500 
-          placeholder-gray-400 outline-none"
+          placeholder-gray-400 outline-none active:outline-red-400"
           type="text"
           placeholder="Start your search"
           onChange={(e) => setSearchInput(e.target.value)}
@@ -64,7 +68,10 @@ const Header = () => {
 
       {/* Right Container */}
       <div className="flex items-center justify-end space-x-4 text-gray-500 ">
-        <p className="hidden font-medium md:inline cursor-pointer py-2 px-3 mx-1 hover:bg-gray-100 rounded-full">
+        <p
+          className="hidden font-medium md:inline cursor-pointer py-2 px-3 mx-1
+         hover:bg-gray-100 rounded-full"
+        >
           Become a host
         </p>
         <GlobeAltIcon className="h-6 cursor-pointer hover:bg-gray-100 rounded-full" />
@@ -97,6 +104,21 @@ const Header = () => {
               min={1}
               className="w-12 pl-2 text-lg outline-none text-red-400"
             />
+          </div>
+          <div className="flex">
+            <button
+              className="flex-grow hover:bg-gray-100 py-2 rounded-full
+               text-gray-500 text-xl transition duration-450"
+              onClick={resetInput}
+            >
+              Cancel
+            </button>
+            <button 
+              className="flex-grow hover:bg-gray-100 py-2 rounded-full 
+               text-red-400 text-xl transition duration-450"
+            >
+              Search
+            </button>
           </div>
         </div>
       )}
