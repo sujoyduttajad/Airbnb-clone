@@ -25,7 +25,7 @@ const Header = () => {
   const handleSelect = (ranges) => {
     setStartDate(ranges.selection.startDate);
     setEndDate(ranges.selection.endDate);
-  }
+  };
 
   return (
     <div className="sticky top-0 z-50 grid grid-cols-3 bg-white shadow-md p-5 md:px-10">
@@ -76,13 +76,18 @@ const Header = () => {
       </div>
 
       {searchInput && (
-        <div className="flex flex-col col-span-3 mx-auto">
+        <div className="flex flex-col col-span-3 mx-auto mt-3">
           <DateRangePicker
             ranges={[selectionRange]}
             minDate={new Date()}
             rangeColors={["#FD5B61"]}
             onChange={handleSelect}
           />
+          <div>
+            <h2 className="text-2xl pl-2 flex-grow font-semibold">
+              Number of Guests
+            </h2>
+          </div>
         </div>
       )}
     </div>
