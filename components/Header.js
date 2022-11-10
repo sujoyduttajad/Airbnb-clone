@@ -5,6 +5,7 @@ import {
   MenuIcon,
   SearchIcon,
   UserCircleIcon,
+  UsersIcon,
 } from "@heroicons/react/solid";
 import Link from "next/link";
 import "react-date-range/dist/styles.css"; // main style file
@@ -83,10 +84,11 @@ const Header = () => {
             rangeColors={["#FD5B61"]}
             onChange={handleSelect}
           />
-          <div>
-            <h2 className="text-2xl pl-2 flex-grow font-semibold">
+          <div className="flex items-center border-b mb-4">
+            <h2 className="text-2xl text-gray-800 pl-2 flex-grow font-semibold">
               Number of Guests
             </h2>
+            <UsersIcon className="h-5 text-gray-600" />
           </div>
         </div>
       )}
