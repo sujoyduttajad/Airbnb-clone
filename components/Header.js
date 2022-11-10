@@ -7,6 +7,8 @@ import {
   UserCircleIcon,
 } from "@heroicons/react/solid";
 import Link from "next/link";
+import 'react-date-range/dist/styles.css'; // main style file
+import 'react-date-range/dist/theme/default.css'; // theme css file
 
 const Header = () => {
   const [searchInput, setSearchInput] = useState();
@@ -50,12 +52,22 @@ const Header = () => {
           Become a host
         </p>
         <GlobeAltIcon className="h-6 cursor-pointer hover:bg-gray-100 rounded-full" />
-        <div className="flex items-center space-x-2 border-2 p-2 rounded-full hover:shadow-xl 
-        transition duration-150 cursor-pointer">
+        <div
+          className="flex items-center space-x-2 border-2 p-2 rounded-full hover:shadow-xl 
+        transition duration-150 cursor-pointer"
+        >
           <MenuIcon className="h-6 " />
           <UserCircleIcon className="h-6 " />
         </div>
       </div>
+
+      {
+        searchInput && (
+          <div>
+
+          </div>
+        )
+      }
     </div>
   );
 };
