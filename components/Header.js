@@ -19,8 +19,13 @@ const Header = () => {
   const selectionRange = {
     startDate: startDate,
     endDate: endDate,
-    key: "Selection",
+    key: "selection",
   };
+
+  const handleSelect = (ranges) => {
+    setStartDate(ranges.selection.startDate);
+    setEndDate(ranges.selection.endDate);
+  }
 
   return (
     <div className="sticky top-0 z-50 grid grid-cols-3 bg-white shadow-md p-5 md:px-10">
@@ -76,7 +81,7 @@ const Header = () => {
             ranges={[selectionRange]}
             minDate={new Date()}
             rangeColors={["#FD5B61"]}
-            
+            onChange={handleSelect}
           />
         </div>
       )}
