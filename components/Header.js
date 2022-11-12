@@ -35,6 +35,10 @@ const Header = () => {
     setSearchInput("");
   };
 
+  const searchRouter = () => {
+    router.push("/search")
+  }
+
   return (
     <div className="sticky top-0 z-50 grid grid-cols-3 bg-white shadow-md p-5 md:px-10">
       {/* Left Container */}
@@ -120,6 +124,7 @@ const Header = () => {
               Cancel
             </button>
             <button
+              onClick={searchRouter}
               className="flex-grow hover:bg-gray-100 py-2 rounded-full 
                text-red-400 text-xl transition duration-450 user-select-none"
             >
