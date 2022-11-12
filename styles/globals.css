@@ -29,11 +29,17 @@
   }
 }
 
+@layer components {
+  .filter-button {
+    @apply px-4 py-2 border rounded-full cursor-pointer hover:shadow-lg font-medium
+    active:scale-95 active:bg-red-400 active:text-white transition transform duration-100
+  }
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  
 }
 
 a {
@@ -53,4 +59,5 @@ a {
   -ms-transform: translateZ(0);
   -o-transform: translateZ(0);
   transform: translateZ(0);
+  backface-visibility: hidden;
 }
