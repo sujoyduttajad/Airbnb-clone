@@ -70,7 +70,7 @@ const Header = () => {
       <div className="flex items-center justify-end space-x-4 text-gray-500 ">
         <p
           className="hidden font-medium md:inline cursor-pointer py-2 px-3 mx-1
-         hover:bg-gray-100 rounded-full"
+         hover:bg-gray-100 rounded-full user-select-none"
         >
           Become a host
         </p>
@@ -109,14 +109,14 @@ const Header = () => {
           <div className="flex">
             <button
               className="flex-grow hover:bg-gray-100 py-2 rounded-full
-               text-gray-500 text-xl transition duration-450"
+               text-gray-500 text-xl transition duration-450 user-select-none"
               onClick={resetInput}
             >
               Cancel
             </button>
             <button 
               className="flex-grow hover:bg-gray-100 py-2 rounded-full 
-               text-red-400 text-xl transition duration-450"
+               text-red-400 text-xl transition duration-450 user-select-none"
             >
               Search
             </button>
