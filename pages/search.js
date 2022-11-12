@@ -5,7 +5,11 @@ function Search() {
   return (
     <div>
         <Header />
-        <div></div>
+        <main className="flex">
+            <section>
+                <p>300+ Stays for 5 number of days</p>
+            </section>
+        </main>
         <Footer />
     </div>
   )
