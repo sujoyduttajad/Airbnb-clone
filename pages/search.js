@@ -10,10 +10,8 @@ function Search() {
           <p className="text-xs">300+ Stays for 5 number of days</p>
           <h1 className="text-3xl font-semibold mt-2 mb-6">Stays in Mars</h1>
           <div className="hidden lg:inline-flex">
-            <p className="px-4 py-2 border rounded-full cursor-pointer hover:shadow-lg font-medium
-            active:scale-95 active:bg-red-400 active:text-white transition transform duration-100">
-              Cancellation Flexibility
-            </p>
+            <p className="filter-button user-select-none">Cancellation Flexibility</p>
+            <p className="filter-button user-select-none">Type of Place</p>
           </div>
         </section>
       </main>
