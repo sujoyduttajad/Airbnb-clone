@@ -20,9 +20,14 @@ const Footer = () => {
           <a>Newsroom</a>
           <a>Investors</a>
           <a>Careers</a>
-          <a>Airbnb Plus</a>
+          <a
+            href="https://github.com/sujoyduttajad/Airbnb-clone"
+            target="_blank"
+          >
+            Airbnb-Clone GitHub
+          </a>
           <a href="https://github.com/sujoyduttajad" target="_blank">
-            My Github Profile
+            My GitHub Profile
           </a>
         </div>
         <div className="space-y-4 text-xs text-gray-800 pr-5">
@@ -34,6 +39,7 @@ const Footer = () => {
           <a>Airbnb.org</a>
           <a>Support Afgan refugees</a>
           <a>Combat discrimination</a>
+          <a>My Portfolio</a>
         </div>
         <div className="space-y-4 text-xs text-gray-800 pr-5">
           <h5 className="text-gray-600 font-semibold capitalize text-lg tracking-wide">
