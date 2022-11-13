@@ -17,16 +17,28 @@ const Footer = () => {
             Airbnb
           </h5>
           <p>
-            <a href="/">How Airbnb works</a>
+            <a className="links" href="/">
+              How Airbnb works
+            </a>
           </p>
           <p>
-            <a href="https://news.airbnb.com/?region=India" target="_blank">Newsroom</a>
+            <a
+              className="links"
+              href="https://news.airbnb.com/?region=India"
+              target="_blank"
+            >
+              Newsroom
+            </a>
           </p>
           <p>
-            <a href="/">Investors</a>
+            <a className="links" href="/">
+              Investors
+            </a>
           </p>
           <p>
-            <a href="/">Careers</a>
+            <a className="links" href="/">
+              Careers
+            </a>
           </p>
           <p>
             <a
@@ -37,7 +49,11 @@ const Footer = () => {
             </a>
           </p>
           <p>
-            <a href="https://github.com/sujoyduttajad" target="_blank">
+            <a
+              className="links"
+              href="https://github.com/sujoyduttajad"
+              target="_blank"
+            >
               My GitHub Profile
             </a>
           </p>
@@ -47,32 +63,36 @@ const Footer = () => {
             Community
           </h5>
           <p>
-            <a href="/" target="_blank">
+            <a className="links" href="/" target="_blank">
               Accessibility
             </a>
           </p>
           <p>
-            <a href="/" target="_blank">
+            <a className="links" href="/" target="_blank">
               Visit our community forum
             </a>
           </p>
           <p>
-            <a href="/" target="_blank">
+            <a className="links" href="/" target="_blank">
               Airbnb.org
             </a>
           </p>
           <p>
-            <a href="/" target="_blank">
+            <a className="links" href="/" target="_blank">
               Support Afgan refugees
             </a>
           </p>
           <p>
-            <a href="/" target="_blank">
+            <a className="links" href="/" target="_blank">
               Combat discrimination
             </a>
           </p>
           <p>
-            <a href="https://sujoyduttaportfolio.gatsbyjs.io/" target="_blank">
+            <a
+              className="links"
+              href="https://sujoyduttaportfolio.gatsbyjs.io/"
+              target="_blank"
+            >
               My Portfolio
             </a>
           </p>
@@ -82,19 +102,29 @@ const Footer = () => {
             Hosting
           </h5>
           <p>
-            <a href="/">Try Hosting</a>
+            <a className="links" href="/">
+              Try Hosting
+            </a>
           </p>
           <p>
-            <a href="/">Explore hosting resources</a>
+            <a className="links" href="/">
+              Explore hosting resources
+            </a>
           </p>
           <p>
-            <a href="/">How to host responsibly</a>
+            <a className="links" href="/">
+              How to host responsibly
+            </a>
           </p>
           <p>
-            <a href="/">Privacy Policy</a>
+            <a className="links" href="/">
+              Privacy Policy
+            </a>
           </p>
           <p>
-            <a href="/">Terms and Conditions</a>
+            <a className="links" href="/">
+              Terms and Conditions
+            </a>
           </p>
         </div>
         <div className="space-y-4 text-xs text-gray-800">
@@ -102,24 +132,38 @@ const Footer = () => {
             Support
           </h5>
           <p>
-            <a href="/">Help Centre</a>
+            <a className="links" href="/">
+              Help Centre
+            </a>
           </p>
           <p>
-            <a href="https://www.airbnb.co.in/aircover" target="_blank">
+            <a
+              className="links"
+              href="https://www.airbnb.co.in/aircover"
+              target="_blank"
+            >
               AirCover
             </a>
           </p>
           <p>
-            <a href="/">Safety Information</a>
+            <a className="links" href="/">
+              Safety Information
+            </a>
           </p>
           <p>
-            <a href="/">Supporting people with disabilities</a>
+            <a className="links" href="/">
+              Supporting people with disabilities
+            </a>
           </p>
           <p>
-            <a href="/">Cancellation options</a>
+            <a className="links" href="/">
+              Cancellation options
+            </a>
           </p>
           <p>
-            <a href="/">Report a neighbourhood concern</a>
+            <a className="links" href="/">
+              Report a neighbourhood concern
+            </a>
           </p>
         </div>
       </section>
