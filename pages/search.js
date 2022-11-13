@@ -64,7 +64,7 @@ function Search({ searchResults }) {
             </button>
           </div>
 
-          <div className="flex flex-col">
+          <div className="flex flex-col mb-20">
             {
                 searchResults.searchData?.map((item) => (
                     <InfoCard
