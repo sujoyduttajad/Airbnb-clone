@@ -10,7 +10,7 @@ import Footer from "../components/Footer";
 
 // This is running inside a server
 export async function getStaticProps() {
-  const filePath = path.join(process.cwd(), "cities.json");
+  const filePath = path.join(process.cwd(), "airbnb.json");
   const jsonData = await fsPromises.readFile(filePath);
   const exploreData = JSON.parse(jsonData);
 
