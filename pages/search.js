@@ -2,10 +2,13 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { useRouter } from "next/router";
 import { format } from "date-fns";
+import fsPromises from "fs/promises";
+import path from "path";
 
 export async function getServerSideProps() {
-  const searchResults = await fetch("https://links.papareact.com/isz").then(
-    (res) => res.json());
+    const filePath = path.join(process.cwd(), "airbnb.json");
+    const jsonData = await fsPromises.readFile(filePath);
+    const searchResults = JSON.parse(jsonData);
 
     return {
         props: {
