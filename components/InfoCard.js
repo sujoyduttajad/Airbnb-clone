@@ -1,4 +1,5 @@
 import { HeartIcon } from "@heroicons/react/outline";
+import { StarIcon } from "@heroicons/react/solid";
 import Image from "next/image";
 import React from "react";
 
@@ -26,6 +27,18 @@ const InfoCard = ({
         <h4 className="text-xl">{title}</h4>
         <div className="border-b w-10 pt-2" />
         <p className="pt-2 text-sm text-gray-500 flex-grow">{description}</p>
+
+        <div className="flex justify-between items-end pt-5">
+          <p className="flex items-center">
+            <StarIcon className="h-5 text-red-400" />
+            {star}
+          </p>
+
+          <div className="flex justify-between ">
+            <p>{price}</p>
+            <p>{total}</p>
+          </div>
+        </div>
       </div>
     </div>
   );
