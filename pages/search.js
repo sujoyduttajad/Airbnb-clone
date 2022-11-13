@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import { format } from "date-fns";
 import fsPromises from "fs/promises";
 import path from "path";
+import InfoCard from "../components/InfoCard";
 
 export async function getServerSideProps() {
     const filePath = path.join(process.cwd(), "airbnb.json");
@@ -61,6 +62,23 @@ function Search({ searchResults }) {
             <button className="filter-button user-select-none">
               More filters
             </button>
+          </div>
+
+          <div className="flex flex-col">
+            {
+                searchResults.map((item) => (
+                    <InfoCard
+                        key={item.title}
+                        img={item.img}
+                        title={item.title}
+                        location={item.location}
+                        description={item.description}
+                        star={item.star}
+                        price={item.price}
+                        total={item.total}
+                    />
+                ))
+            }
           </div>
         </section>
       </main>
