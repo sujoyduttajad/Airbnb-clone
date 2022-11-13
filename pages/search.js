@@ -66,7 +66,7 @@ function Search({ searchResults }) {
 
           <div className="flex flex-col">
             {
-                searchResults.map((item) => (
+                searchResults.searchData?.map((item) => (
                     <InfoCard
                         key={item.title}
                         img={item.img}
