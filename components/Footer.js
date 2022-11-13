@@ -16,52 +16,102 @@ const Footer = () => {
           <h5 className="text-gray-600 font-semibold capitalize text-lg tracking-wide">
             Airbnb
           </h5>
-          <a>How Airbnb works</a>
-          <a>Newsroom</a>
-          <a>Investors</a>
-          <a>Careers</a>
-          <a
-            href="https://github.com/sujoyduttajad/Airbnb-clone"
-            target="_blank"
-          >
-            Airbnb-Clone GitHub
-          </a>
-          <a href="https://github.com/sujoyduttajad" target="_blank">
-            My GitHub Profile
-          </a>
+          <p>
+            <a>How Airbnb works</a>
+          </p>
+          <p>
+            <a>Newsroom</a>
+          </p>
+          <p>
+            <a>Investors</a>
+          </p>
+          <p>
+            <a>Careers</a>
+          </p>
+          <p>
+            <a
+              href="https://github.com/sujoyduttajad/Airbnb-clone"
+              target="_blank"
+            >
+              Airbnb-Clone GitHub
+            </a>
+          </p>
+          <p>
+            <a href="https://github.com/sujoyduttajad" target="_blank">
+              My GitHub Profile
+            </a>
+          </p>
         </div>
         <div className="space-y-4 text-xs text-gray-800 pr-5">
           <h5 className="text-gray-600 font-semibold capitalize text-lg tracking-wide">
             Community
           </h5>
-          <a>Accessibility</a>
-          <a>Visit our community forum</a>
-          <a>Airbnb.org</a>
-          <a>Support Afgan refugees</a>
-          <a>Combat discrimination</a>
-          <a>My Portfolio</a>
+          <p>
+            <a>Accessibility</a>
+          </p>
+          <p>
+            <a>Visit our community forum</a>
+          </p>
+          <p>
+            <a>Airbnb.org</a>
+          </p>
+          <p>
+            <a>Support Afgan refugees</a>
+          </p>
+          <p>
+            <a>Combat discrimination</a>
+          </p>
+          <p>
+            <a href="https://sujoyduttaportfolio.gatsbyjs.io/" target="_blank">
+              My Portfolio
+            </a>
+          </p>
         </div>
         <div className="space-y-4 text-xs text-gray-800 pr-5">
           <h5 className="text-gray-600 font-semibold capitalize text-lg tracking-wide">
             Hosting
           </h5>
-          <a>Try Hosting</a>
-          <a>AirCover for Hosts</a>
-          <a>Explore hosting resources</a>
-          <a>How to host responsibly</a>
-          <a>Privacy Policy</a>
-          <a>Terms and Conditions</a>
+          <p>
+            <a>Try Hosting</a>
+          </p>
+          <p>
+            <a>AirCover for Hosts</a>
+          </p>
+          <p>
+            <a>Explore hosting resources</a>
+          </p>
+          <p>
+            <a>How to host responsibly</a>
+          </p>
+          <p>
+            <a>Privacy Policy</a>
+          </p>
+          <p>
+            <a>Terms and Conditions</a>
+          </p>
         </div>
         <div className="space-y-4 text-xs text-gray-800">
           <h5 className="text-gray-600 font-semibold capitalize text-lg tracking-wide">
             Support
           </h5>
-          <a>Help Centre</a>
-          <a>AirCover</a>
-          <a>Safety Information</a>
-          <a>Supporting people with disabilities</a>
-          <a>Cancellation options</a>
-          <a>Report a neighbourhood concern</a>
+          <p>
+            <a>Help Centre</a>
+          </p>
+          <p>
+            <a>AirCover</a>
+          </p>
+          <p>
+            <a>Safety Information</a>
+          </p>
+          <p>
+            <a>Supporting people with disabilities</a>
+          </p>
+          <p>
+            <a>Cancellation options</a>
+          </p>
+          <p>
+            <a>Report a neighbourhood concern</a>
+          </p>
         </div>
       </section>
       <div className="py-4 pt-10 bg-gray-100 text-gray-600 flex justify-center items-center w-full">
