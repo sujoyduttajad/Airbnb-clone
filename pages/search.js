@@ -15,9 +15,9 @@ export async function getServerSideProps() {
 
 }
 
-function Search() {
+function Search({ searchResults }) {
   const router = useRouter();
-
+  console.log(searchResults);    
   const { location, startDate, endDate, noOfGuests } = router.query;
 
   const rangeFunc = () => {
