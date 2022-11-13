@@ -3,6 +3,18 @@ import Footer from "../components/Footer";
 import { useRouter } from "next/router";
 import { format } from "date-fns";
 
+export async function getServerSideProps() {
+  const searchResults = await fetch("https://links.papareact.com/isz").then(
+    (res) => res.json());
+
+    return {
+        props: {
+            searchResults
+        }
+    }
+
+}
+
 function Search() {
   const router = useRouter();
 
