@@ -35,8 +35,8 @@ const InfoCard = ({
           </p>
 
           <div className="flex justify-between ">
-            <p>{price}</p>
-            <p>{total}</p>
+            <p className="text-lg lg:text-2xl font-semibold pb-2">{price}</p>
+            <p className="text-right font-extralight ">{total}</p>
           </div>
         </div>
       </div>
