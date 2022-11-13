@@ -27,7 +27,7 @@ const InfoCard = ({
       <div className="flex flex-col flex-grow pl-5">
         <div className="flex justify-between">
           <p>{location}</p>
-          <HeartIcon className="h-7 cursor-pointer" />
+          <HeartIcon className="h-7 cursor-pointer text-gray-500" />
         </div>
 
         <h4 className="text-xl">{title}</h4>
@@ -41,8 +41,8 @@ const InfoCard = ({
           </p>
 
           <div className="flex flex-col justify-between items-end">
-            <p className="text-lg lg:text-2xl font-semibold pb-2">{price}</p>
-            <p className="text-right font-extralight ">{total}</p>
+            <p className="text-lg lg:text-2xl text-gray-900 font-semibold pb-2">{price}</p>
+            <p className="text-right text-base text-gray-500 font-extralight ">{total}</p>
           </div>
         </div>
       </div>
