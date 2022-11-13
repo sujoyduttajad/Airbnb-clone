@@ -34,6 +34,9 @@
     @apply px-4 py-2 border rounded-full cursor-pointer hover:shadow-lg font-medium active:scale-95 
     active:bg-red-400 active:text-white transition transform duration-100 ease-out;
   }
+  .links {
+    @apply underline cursor-pointer
+  }
 }
 
 html,
