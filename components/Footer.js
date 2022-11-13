@@ -17,16 +17,16 @@ const Footer = () => {
             Airbnb
           </h5>
           <p>
-            <a>How Airbnb works</a>
+            <a href="/">How Airbnb works</a>
           </p>
           <p>
-            <a>Newsroom</a>
+            <a href="https://news.airbnb.com/?region=India" target="_blank">Newsroom</a>
           </p>
           <p>
-            <a>Investors</a>
+            <a href="/">Investors</a>
           </p>
           <p>
-            <a>Careers</a>
+            <a href="/">Careers</a>
           </p>
           <p>
             <a
@@ -47,19 +47,29 @@ const Footer = () => {
             Community
           </h5>
           <p>
-            <a>Accessibility</a>
+            <a href="/" target="_blank">
+              Accessibility
+            </a>
           </p>
           <p>
-            <a>Visit our community forum</a>
+            <a href="/" target="_blank">
+              Visit our community forum
+            </a>
           </p>
           <p>
-            <a>Airbnb.org</a>
+            <a href="/" target="_blank">
+              Airbnb.org
+            </a>
           </p>
           <p>
-            <a>Support Afgan refugees</a>
+            <a href="/" target="_blank">
+              Support Afgan refugees
+            </a>
           </p>
           <p>
-            <a>Combat discrimination</a>
+            <a href="/" target="_blank">
+              Combat discrimination
+            </a>
           </p>
           <p>
             <a href="https://sujoyduttaportfolio.gatsbyjs.io/" target="_blank">
@@ -72,22 +82,19 @@ const Footer = () => {
             Hosting
           </h5>
           <p>
-            <a>Try Hosting</a>
+            <a href="/">Try Hosting</a>
           </p>
           <p>
-            <a>AirCover for Hosts</a>
+            <a href="/">Explore hosting resources</a>
           </p>
           <p>
-            <a>Explore hosting resources</a>
+            <a href="/">How to host responsibly</a>
           </p>
           <p>
-            <a>How to host responsibly</a>
+            <a href="/">Privacy Policy</a>
           </p>
           <p>
-            <a>Privacy Policy</a>
-          </p>
-          <p>
-            <a>Terms and Conditions</a>
+            <a href="/">Terms and Conditions</a>
           </p>
         </div>
         <div className="space-y-4 text-xs text-gray-800">
@@ -95,22 +102,24 @@ const Footer = () => {
             Support
           </h5>
           <p>
-            <a>Help Centre</a>
+            <a href="/">Help Centre</a>
           </p>
           <p>
-            <a>AirCover</a>
+            <a href="https://www.airbnb.co.in/aircover" target="_blank">
+              AirCover
+            </a>
           </p>
           <p>
-            <a>Safety Information</a>
+            <a href="/">Safety Information</a>
           </p>
           <p>
-            <a>Supporting people with disabilities</a>
+            <a href="/">Supporting people with disabilities</a>
           </p>
           <p>
-            <a>Cancellation options</a>
+            <a href="/">Cancellation options</a>
           </p>
           <p>
-            <a>Report a neighbourhood concern</a>
+            <a href="/">Report a neighbourhood concern</a>
           </p>
         </div>
       </section>
