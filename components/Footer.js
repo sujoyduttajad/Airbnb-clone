@@ -1,5 +1,5 @@
 import React from "react";
-import { FacebookIcon } from "./SocialIcons";
+import { FacebookIcon, InstaIcon, TwitterIcon } from "./SocialIcons";
 
 const currYear = () => {
   const _year = new Date().getFullYear();
@@ -170,10 +170,20 @@ const Footer = () => {
       </section>
       <div className="py-4 pt-10 bg-gray-100 text-gray-600 flex flex-wrap justify-around items-center w-full">
         <p>© {currYear()} Airbnb, Inc. </p>
-        <span>
-          <FacebookIcon />
-        </span>
-        <p className="font-semibold">Developed by <span className="text-red-400">Sujoy Dutta</span></p>
+        <div className="flex justify-evenly w-32">
+          <a href="https://www.facebook.com/AirbnbIndia" target={"_blank"}>
+            <FacebookIcon />
+          </a>
+          <a href="https://twitter.com/airbnb_in" target={"_blank"}>
+            <TwitterIcon />
+          </a>
+          <a href="https://www.instagram.com/airbnb/" target={"_blank"}>
+            <InstaIcon />
+          </a>
+        </div>
+        <p className="font-semibold">
+          Developed by <span className="text-red-400">Sujoy Dutta</span>
+        </p>
       </div>
     </footer>
   );
