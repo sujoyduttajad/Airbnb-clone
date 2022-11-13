@@ -13,9 +13,15 @@ const InfoCard = ({
   total,
 }) => {
   return (
-    <div className="flex">
+    <div className="infocard-container">
       <div className="relative h-24 w-40 md:h-52 md:w-80 flex-shrink-0">
-        <Image src={img} layout="fill" objectFit="cover" priority={true} />
+        <Image
+          src={img}
+          layout="fill"
+          objectFit="cover"
+          priority={true}
+          className="rounded-2xl"
+        />
       </div>
 
       <div className="flex flex-col flex-grow pl-5">
@@ -30,11 +36,11 @@ const InfoCard = ({
 
         <div className="flex justify-between items-end pt-5">
           <p className="flex items-center">
-            <StarIcon className="h-5 text-red-400" />
-            {star}
+            <StarIcon className="h-5 text-red-400 pr-2" />
+            <p className="font-medium text-sm text-gray-500">{star}</p>
           </p>
 
-          <div className="flex justify-between ">
+          <div className="flex flex-col justify-between items-end">
             <p className="text-lg lg:text-2xl font-semibold pb-2">{price}</p>
             <p className="text-right font-extralight ">{total}</p>
           </div>
