@@ -182,7 +182,14 @@ const Footer = () => {
           </a>
         </div>
         <p className="font-semibold mt-6 lg:mt-0 md:mt-0">
-          Developed by <span className="text-red-400">Sujoy Dutta</span>
+          Developed by{" "}
+          <a
+            href="https://sujoyduttaportfolio.gatsbyjs.io/"
+            target={"_blank"}
+            className="text-red-400 links"
+          >
+            Sujoy Dutta
+          </a>
         </p>
       </div>
     </footer>
