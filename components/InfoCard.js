@@ -26,11 +26,11 @@ const InfoCard = ({
 
       <div className="flex flex-col flex-grow pl-5">
         <div className="flex justify-between">
-          <p>{location}</p>
+          <p className="text-sm text-gray-500 indent-px tracking-wider">{location}</p>
           <HeartIcon className="h-7 cursor-pointer text-gray-500" />
         </div>
 
-        <h4 className="text-xl">{title}</h4>
+        <h4 className="text-xl text-[#212529] tracking-wide font-semibold">{title}</h4>
         <div className="border-b w-10 pt-2" />
         <p className="pt-2 text-sm text-gray-500 flex-grow">{description}</p>
 
