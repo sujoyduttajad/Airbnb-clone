@@ -1,5 +1,7 @@
 import("tailwindcss").Config;
 
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -8,17 +10,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: [
-          "Gotham_Medium_1",
-          "Gotham_Medium",
-          "Gotham_Light",
-      
-          // "Gotham_Bold",
-        
-         
-          "Arial",
-          "sans-serif",
-        ],
+        raleway: ['Raleway', ...defaultTheme.fontFamily.sans]
       },
     },
   },
