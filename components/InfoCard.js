@@ -29,7 +29,7 @@ const InfoCard = ({
           <p className="text-sm text-gray-500 indent-px tracking-wider">
             {location}
           </p>
-          <HeartIcon className="h-7 cursor-pointer text-gray-500" />
+          <HeartIcon className="h-7 icon-button cursor-pointer text-gray-500" />
         </div>
 
         <h4 className="text-xl w-fit text-[#212529] tracking-wide font-semibold">
@@ -40,7 +40,9 @@ const InfoCard = ({
 
         <div className="flex justify-between items-end pt-5">
           <div className="flex items-center">
-            <StarIcon className="h-5 text-red-400 pr-2" />
+            
+              <StarIcon className="h-5 text-red-400 pr-2" />
+            
             <p className="font-medium text-sm text-gray-500">{star}</p>
           </div>
 
