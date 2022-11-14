@@ -1,4 +1,4 @@
-import('tailwindcss').Config
+import("tailwindcss").Config;
 
 module.exports = {
   content: [
@@ -8,11 +8,19 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'sans': ['Airbnb Cereal', 'Helvetica', 'Arial', 'sans-serif']
-      }
+        sans: [
+          "Gotham_Medium_1",
+          "Gotham_Medium",
+          "Gotham_Light",
+      
+          // "Gotham_Bold",
+        
+         
+          "Arial",
+          "sans-serif",
+        ],
+      },
     },
   },
-  plugins: [
-    require('tailwind-scrollbar-hide')
-  ],
+  plugins: [require("tailwind-scrollbar-hide")],
 };
