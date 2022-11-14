@@ -4,28 +4,32 @@
 
 @layer base {
   @font-face {
-    font-family: Airbnb_Cereal;
-    src: url("../fonts/AirbnbCereal_W_Md.otf") format("opentype");
+    font-family: Gotham_Black;
+    src: url("../fonts/Gotham-Black.otf") format("opentype");
   }
   @font-face {
-    font-family: Airbnb_Cereal;
-    src: url("../fonts/AirbnbCereal_W_XBd.otf") format("opentype");
+    font-family: Gotham_Bold;
+    src: url("../fonts/Gotham-Bold.otf") format("opentype");
   }
   @font-face {
-    font-family: Airbnb_Cereal;
-    src: url("../fonts/AirbnbCereal_W_Lt.otf") format("opentype");
+    font-family: Gotham_Light;
+    src: url("../fonts/Gotham-Light.otf") format("opentype");
   }
   @font-face {
-    font-family: Airbnb_Cereal;
-    src: url("../fonts/AirbnbCereal_W_Blk.otf") format("opentype");
+    font-family: Gotham_Thin;
+    src: url("../fonts/Gotham-Thin.otf") format("opentype");
   }
   @font-face {
-    font-family: Airbnb_Cereal;
-    src: url("../fonts/AirbnbCereal_W_Bk.otf") format("opentype");
+    font-family: Gotham_Bold;
+    src: url("../fonts/GothamBold.ttf") format("truetype");
   }
   @font-face {
-    font-family: Airbnb_Cereal;
-    src: url("../fonts/AirbnbCereal_W_Bd.otf") format("opentype");
+    font-family: Gotham_Medium_1;
+    src: url("../fonts/GothamMedium_1.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: Gotham_Medium;
+    src: url("../fonts/GothamMedium.ttf") format("truetype");
   }
 }
 
