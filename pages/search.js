@@ -39,12 +39,12 @@ function Search({ searchResults }) {
         }`}
       />
       <main className="flex">
-        <section className="flex-grow pt-14 px-6">
+        <section className="flex-grow pt-10 px-6">
           <p className="text-base">
             300+ Stays from {range} - for {noOfGuests}{" "}
             {noOfGuests > 1 ? "guests" : "guest"}
           </p>
-          <h1 className="text-3xl font-semibold mt-2 mb-6">
+          <h1 className="text-3xl font-semibold mt-2 mb-6 capitalize">
             Stays in {location}
           </h1>
           <div className="hidden lg:inline-flex mb-5 space-x-3 text-gray-800 whitespace-nowrap">
