@@ -39,10 +39,10 @@ const InfoCard = ({
         <p className="pt-2 text-sm text-gray-500 flex-grow">{description}</p>
 
         <div className="flex justify-between items-end pt-5">
-          <p className="flex items-center">
+          <div className="flex items-center">
             <StarIcon className="h-5 text-red-400 pr-2" />
             <p className="font-medium text-sm text-gray-500">{star}</p>
-          </p>
+          </div>
 
           <div className="flex flex-col justify-between items-end">
             <p className="text-lg lg:text-2xl text-gray-900 font-semibold pb-2">
