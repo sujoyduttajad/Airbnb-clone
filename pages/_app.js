@@ -13,7 +13,7 @@ const progress = new ProgressBar({
 Router.events.on('routeChangeStart', progress.start);
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return <Component className="font-raleway" {...pageProps} />
 }
 
 export default MyApp
