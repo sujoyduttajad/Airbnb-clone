@@ -48,7 +48,7 @@ const InfoCard = ({
             <p className="text-lg lg:text-2xl text-gray-900 font-semibold pb-2">
               {price}
             </p>
-            <p className="text-right text-base text-gray-500 font-extralight ">
+            <p className="text-right text-base text-gray-500 font-medium">
               {total}
             </p>
           </div>
