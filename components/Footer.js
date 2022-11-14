@@ -45,8 +45,9 @@ const Footer = () => {
             <a
               href="https://github.com/sujoyduttajad/Airbnb-clone"
               target="_blank"
+              className="links text-[#FD585E]"
             >
-              Airbnb-Clone GitHub
+              Airbnb 1.0 GitHub
             </a>
           </p>
           <p>
@@ -125,6 +126,11 @@ const Footer = () => {
           <p>
             <a className="links" href="/">
               Terms and Conditions
+            </a>
+          </p>
+          <p>
+            <a className="links text-[#FF385C]" href="#">
+              Airbnb 2.0(Build soon)
             </a>
           </p>
         </div>
