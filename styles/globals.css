@@ -10,7 +10,7 @@
     active:bg-red-400 active:text-white transition transform duration-100 ease-out text-base;
   }
   .links {
-    @apply hover:underline cursor-pointer
+    @apply hover:underline cursor-pointer;
   }
   .infocard-container {
     @apply flex py-7 px-2 border-b cursor-pointer hover:opacity-90 hover:shadow-lg transition duration-200 ease-out first:border-t;
