@@ -40,7 +40,7 @@ function Search({ searchResults }) {
       />
       <main className="flex">
         <section className="flex-grow pt-14 px-6">
-          <p className="text-xs">
+          <p className="text-base">
             300+ Stays from {range} - for {noOfGuests}{" "}
             {noOfGuests > 1 ? "guests" : "guest"}
           </p>
