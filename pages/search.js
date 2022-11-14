@@ -7,21 +7,20 @@ import path from "path";
 import InfoCard from "../components/InfoCard";
 
 export async function getServerSideProps() {
-    const filePath = path.join(process.cwd(), "airbnb.json");
-    const jsonData = await fsPromises.readFile(filePath);
-    const searchResults = JSON.parse(jsonData);
+  const filePath = path.join(process.cwd(), "airbnb.json");
+  const jsonData = await fsPromises.readFile(filePath);
+  const searchResults = JSON.parse(jsonData);
 
-    return {
-        props: {
-            searchResults
-        }
-    }
-
+  return {
+    props: {
+      searchResults,
+    },
+  };
 }
 
 function Search({ searchResults }) {
   const router = useRouter();
-  
+
   const { location, startDate, endDate, noOfGuests } = router.query;
 
   const rangeFunc = () => {
@@ -65,20 +64,18 @@ function Search({ searchResults }) {
           </div>
 
           <div className="flex flex-col mb-20">
-            {
-                searchResults.searchData?.map((item) => (
-                    <InfoCard
-                        key={item.title}
-                        img={item.img}
-                        title={item.title}
-                        location={item.location}
-                        description={item.description}
-                        star={item.star}
-                        price={item.price}
-                        total={item.total}
-                    />
-                ))
-            }
+            {searchResults.searchData?.map((item) => (
+              <InfoCard
+                key={item.title}
+                img={item.img}
+                title={item.title}
+                location={item.location}
+                description={item.description}
+                star={item.star}
+                price={item.price}
+                total={item.total}
+              />
+            ))}
           </div>
         </section>
       </main>
