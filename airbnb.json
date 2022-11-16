@@ -66,8 +66,7 @@
       "title": "Stay at this spacious Edwardian House",
       "description": "1 guest · 1 bedroom · 1 bed · 1.5 shared bathrooms · Wifi · Kitchen · Free parking · Washing Machine",
       "star": 4.73,
-      "price": "£30 / night",
-      "pricePerNight": 30,
+      "price": 30,
       "long": -0.0022275,
       "lat": 51.5421655
     },
@@ -77,8 +76,7 @@
       "title": "Independant luxury studio apartment",
       "description": "2 guest · 3 bedroom · 1 bed · 1.5 shared bathrooms · Wifi · Kitchen",
       "star": 4.3,
-      "price": "£40 / night",
-      "pricePerNight": 40,
+      "price": 40,
       "long": -0.095091,
       "lat": 51.48695
     },
@@ -88,8 +86,7 @@
       "title": "London Studio Apartments",
       "description": "4 guest · 4 bedroom · 4 bed · 2 bathrooms · Free parking · Washing Machine",
       "star": 3.8,
-      "price": "£35 / night",
-      "pricePerNight": 35,
+      "price": 35,
       "long": -0.135638,
       "lat": 51.521916
     },
@@ -99,8 +96,7 @@
       "title": "30 mins to Oxford Street, Excel London",
       "description": "1 guest · 1 bedroom · 1 bed · 1.5 shared bathrooms · Wifi · Kitchen · Free parking · Washing Machine",
       "star": 4.1,
-      "price": "£55 / night",
-      "pricePerNight": 55,
+      "price": 55,
       "long": -0.069961,
       "lat": 51.472618
     },
@@ -110,8 +106,7 @@
       "title": "Spacious Peaceful Modern Bedroom",
       "description": "3 guest · 1 bedroom · 1 bed · 1.5 shared bathrooms · Wifi · Free parking · Dry Cleaning",
       "star": 5.0,
-      "price": "£60 / night",
-      "pricePerNight": 60,
+      "price": 60,
       "long": -0.08472,
       "lat": 51.510794
     },
@@ -121,8 +116,7 @@
       "title": "The Blue Room In London",
       "description": "2 guest · 1 bedroom · 1 bed · 1.5 shared bathrooms · Wifi · Washing Machine",
       "star": 4.23,
-      "price": "£65 / night",
-      "pricePerNight": 65,
+      "price": 65,
       "long": -0.094116,
       "lat": 51.51401
     },
@@ -132,8 +126,7 @@
       "title": "5 Star Luxury Apartment",
       "description": "3 guest · 1 bedroom · 1 bed · 1.5 shared bathrooms · Wifi · Kitchen · Free parking · Washing Machine",
       "star": 3.85,
-      "price": "£90 / night",
-      "pricePerNight": 90,
+      "price": 90,
       "long": -0.109889,
       "lat": 51.521245
     }
