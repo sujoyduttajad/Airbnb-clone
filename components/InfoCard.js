@@ -10,8 +10,13 @@ const InfoCard = ({
   description,
   star,
   price,
-  total,
+  pricePerNight,
+  noOfGuests,
 }) => {
+  const calcTotal = () => {
+    return pricePerNight * noOfGuests;
+  };
+
   return (
     <div className="infocard-container">
       <div className="relative h-24 w-40 md:h-52 md:w-80 flex-shrink-0">
@@ -49,7 +54,7 @@ const InfoCard = ({
               {price}
             </p>
             <p className="text-right text-base text-gray-500 font-medium">
-              {total}
+              £{calcTotal()}
             </p>
           </div>
         </div>
