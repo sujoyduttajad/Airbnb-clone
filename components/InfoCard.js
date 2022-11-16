@@ -10,11 +10,10 @@ const InfoCard = ({
   description,
   star,
   price,
-  pricePerNight,
   noOfGuests,
 }) => {
   const calcTotal = () => {
-    return pricePerNight * noOfGuests;
+    return price * noOfGuests;
   };
 
   return (
@@ -51,7 +50,7 @@ const InfoCard = ({
 
           <div className="flex flex-col justify-between items-end">
             <p className="text-lg lg:text-2xl text-gray-900 font-semibold pb-2">
-              {price}
+              £{price} / night
             </p>
             <p className="text-right text-base text-gray-500 font-medium">
               £{calcTotal()}
