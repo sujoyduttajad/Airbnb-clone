@@ -73,7 +73,8 @@ function Search({ searchResults }) {
                 description={item.description}
                 star={item.star}
                 price={item.price}
-                total={item.total}
+                pricePerNight={item.pricePerNight}
+                noOfGuests={noOfGuests}
               />
             ))}
           </div>
