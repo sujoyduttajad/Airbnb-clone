@@ -17,8 +17,8 @@ const InfoCard = ({
   };
 
   return (
-    <div className="flex-col infocard-container md:flex-row lg:flex-row ">
-      <div className="relative w-100 h-80 lg:h-24 lg:w-40 md:h-52 md:w-80 flex-shrink-0">
+    <div className="flex-col infocard-container md:flex-row lg:flex-row lg:pr-5">
+      <div className="relative lg:h-52 lg:w-80 md:h-52 md:w-80 h-80 w-100 flex-shrink-0">
         <Image
           src={img}
           layout="fill"
@@ -36,7 +36,7 @@ const InfoCard = ({
           <HeartIcon className="h-7 cursor-pointer text-gray-500" />
         </div>
 
-        <h4 className="text-xl w-fit text-[#212529] tracking-wide font-semibold">
+        <h4 className="text-lg lg:text-xl md:text-xl w-fit text-[#212529] tracking-wide font-semibold">
           {title}
           <div className="border-b w-100 pt-2" />
         </h4>
