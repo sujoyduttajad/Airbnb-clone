@@ -36,15 +36,29 @@ const Header = ({ placeholder }) => {
   };
 
   const searchRouter = () => {
-    router.push({
-      pathname: '/search',
-      query: {
-        location: searchInput,
-        startDate: startDate.toISOString(),
-        endDate: endDate.toISOString(),
-        noOfGuests
-      }
-    })
+    if(router.pathname === '/') {
+      router.push({
+        pathname: '/search',
+        query: {
+          location: searchInput,
+          startDate: startDate.toISOString(),
+          endDate: endDate.toISOString(),
+          noOfGuests
+        }
+      })
+    } else {
+      router.push({
+        pathname: '/search',
+        query: {
+          location: searchInput,
+          startDate: startDate.toISOString(),
+          endDate: endDate.toISOString(),
+          noOfGuests
+        }
+      })
+      setSearchInput("");
+    }
+
   }
 
   return (
@@ -108,7 +122,6 @@ const Header = ({ placeholder }) => {
             minDate={new Date()}
             rangeColors={["#FD5B61"]}
             onChange={handleSelect}
-            // className="font-sans"
           />
           <div className="flex items-center border-b mb-4">
             <h2 className="text-2xl text-gray-800 pl-2 flex-grow font-semibold">
