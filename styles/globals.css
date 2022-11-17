@@ -13,7 +13,8 @@
     @apply hover:underline cursor-pointer;
   }
   .infocard-container {
-    @apply flex py-7 px-2 border-b cursor-pointer hover:opacity-90 hover:shadow-lg transition duration-200 ease-out first:border-t;
+    @apply flex py-7 px-2 border-b cursor-pointer hover:opacity-90 hover:shadow-lg 
+    transition duration-200 ease-out first:border-t;
   }
 }
 
