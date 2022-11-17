@@ -36,30 +36,29 @@ const Header = ({ placeholder }) => {
   };
 
   const searchRouter = () => {
-    if(router.pathname === '/') {
+    if (router.pathname === "/") {
       router.push({
-        pathname: '/search',
+        pathname: "/search",
         query: {
           location: searchInput,
           startDate: startDate.toISOString(),
           endDate: endDate.toISOString(),
-          noOfGuests
-        }
-      })
+          noOfGuests,
+        },
+      });
     } else {
       router.push({
-        pathname: '/search',
+        pathname: "/search",
         query: {
           location: searchInput,
           startDate: startDate.toISOString(),
           endDate: endDate.toISOString(),
-          noOfGuests
-        }
-      })
+          noOfGuests,
+        },
+      });
       setSearchInput("");
     }
-
-  }
+  };
 
   return (
     <div className="sticky top-0 z-50 grid grid-cols-3 bg-white shadow-md p-5 md:px-10">
@@ -68,13 +67,16 @@ const Header = ({ placeholder }) => {
         onClick={() => router.push("/")}
         className="relative flex items-center justify-start h-10 my-auto"
       >
+        <div className="md:flex lg:flex hidden">
           <Image
             src="https://links.papareact.com/qd3"
             layout="fill"
             objectFit="contain"
             objectPosition="left"
-            className="cursor-pointer"
+            className="cursor-pointer "
           />
+        </div>
+        <div></div>
       </div>
 
       {/* Middle Container - Search bar */}
