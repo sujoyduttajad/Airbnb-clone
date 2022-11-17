@@ -17,8 +17,8 @@ const InfoCard = ({
   };
 
   return (
-    <div className="infocard-container">
-      <div className="relative h-24 w-40 md:h-52 md:w-80 flex-shrink-0">
+    <div className="flex-col infocard-container md:flex-row lg:flex-row ">
+      <div className="relative w-100 h-80 lg:h-24 lg:w-40 md:h-52 md:w-80 flex-shrink-0">
         <Image
           src={img}
           layout="fill"
@@ -28,7 +28,7 @@ const InfoCard = ({
         />
       </div>
 
-      <div className="flex flex-col flex-grow pl-5">
+      <div className="flex flex-col flex-grow lg:pl-5 md:pl-5 sm:pl-3 pt-3">
         <div className="flex justify-between">
           <p className="text-sm text-gray-500 indent-px tracking-wider">
             {location}
