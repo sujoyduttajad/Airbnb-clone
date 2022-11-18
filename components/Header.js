@@ -11,6 +11,7 @@ import "react-date-range/dist/styles.css"; // main style file
 import "react-date-range/dist/theme/default.css"; // theme css file
 import { DateRangePicker } from "react-date-range";
 import { useRouter } from "next/router";
+import airbnbIcon from "../images/airbnb-icon.svg"
 
 const Header = ({ placeholder }) => {
   const [searchInput, setSearchInput] = useState();
@@ -76,12 +77,21 @@ const Header = ({ placeholder }) => {
             className="cursor-pointer "
           />
         </div>
-        <div></div>
+        <div className="flex lg:hidden md:hidden w-fit">
+          <Image 
+            src={airbnbIcon}
+            objectPosition="left"
+            objectFit="contain"
+            width='40px'
+            height='50px'
+            className="cursor-pointer"
+          />
+        </div>
       </div>
 
       {/* Middle Container - Search bar */}
       <div
-        className={`flex items-center justify-between md:border-2 rounded-full
+        className={`flex items-center justify-between border-2 rounded-full
         py-2 shadow-sm hover:border-red-400 ${
           searchInput ? "border-red-400" : ""
         }`}
