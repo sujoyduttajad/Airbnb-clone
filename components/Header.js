@@ -66,7 +66,7 @@ const Header = ({ placeholder }) => {
       {/* Left Container */}
       <div
         onClick={() => router.push("/")}
-        className="relative flex items-center justify-start h-10 my-auto"
+        className="relative w-10 flex items-center justify-start h-10 my-auto"
       >
         <div className="md:flex lg:flex hidden">
           <Image
@@ -91,7 +91,7 @@ const Header = ({ placeholder }) => {
 
       {/* Middle Container - Search bar */}
       <div
-        className={`flex items-center justify-between border-2 rounded-full
+        className={`flex items-center col-span-2 md:col-auto lg:col-auto justify-between border-2 rounded-full
         py-2 shadow-sm hover:border-red-400 ${
           searchInput ? "border-red-400" : ""
         }`}
