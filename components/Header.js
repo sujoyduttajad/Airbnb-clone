@@ -66,7 +66,7 @@ const Header = ({ placeholder }) => {
       {/* Left Container */}
       <div
         onClick={() => router.push("/")}
-        className="relative w-10 flex items-center justify-start h-10 my-auto"
+        className="relative flex items-center justify-start h-10 my-auto"
       >
         <div className="md:flex lg:flex hidden">
           <Image
