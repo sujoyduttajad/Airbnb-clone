@@ -6,7 +6,7 @@ import React from "react";
 const InfoCard = ({
   img,
   title,
-  neighbourhood,
+  neighborhood,
   description,
   star,
   price,
@@ -30,9 +30,9 @@ const InfoCard = ({
       </div>
 
       <div className="flex flex-col flex-grow lg:pt-0 md:pt-0 lg:pl-5 md:pl-5 sm:pl-3 pt-3">
-        <div className="flex justify-between">
+        <div className="flex justify-between user-select-none">
           <p className="text-sm text-gray-500 indent-px tracking-wider">
-            {neighbourhood}{" "}{location}
+            {neighborhood}{" "}{location}
           </p>
           <HeartIcon className="h-7 cursor-pointer text-gray-500" />
         </div>
@@ -49,7 +49,7 @@ const InfoCard = ({
             <p className="font-medium text-sm text-gray-500">{star}</p>
           </div>
 
-          <div className="flex flex-col justify-between items-end">
+          <div className="flex flex-col justify-between items-end user-select-none">
             <p className="text-lg lg:text-2xl text-gray-900 font-semibold pb-2">
               £{price} / night
             </p>
