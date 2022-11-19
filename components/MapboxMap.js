@@ -14,9 +14,13 @@ const MapboxMap = ({ data }) => {
   const coordinates = data.map(result => ({
     longitude: result.long,
     latitude: result.lat
-  }))
+  }));
 
-  console.log(coordinates)
+  // The latitude and longitude of the center of locations coordinates
+  const center = getCenter(coordinates);
+
+  console.log(center);
+  
  
   return (
     <Map
