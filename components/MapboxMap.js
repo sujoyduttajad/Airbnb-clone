@@ -12,8 +12,6 @@ const MapboxMap = ({ data }) => {
   const center = getCenter(coordinates);
 
   const [viewport, setViewport] = useState({
-    width: "100%",
-    height: "100%",
     latitude: center.latitude,
     longitude: center.longitude,
     zoom: 11,
@@ -24,6 +22,7 @@ const MapboxMap = ({ data }) => {
       mapStyle="mapbox://styles/sujoy11/clagxis0m000b15nn826z74bn"
       mapboxAccessToken={process.env.mapbox_key}
       onMove={(evt) => setViewport(evt.viewState)}
+      style={{width: 600, height: "100%"}}
       {...viewport}
     >
       {data.map((result) => (
@@ -34,7 +33,7 @@ const MapboxMap = ({ data }) => {
             offsetLeft={-20}
             offsetTop={-10}
           >
-            <p className="cursor-pointer text-xs animate-bounce">
+            <p className="cursor-pointer text-xs m-0 animate-bounce">
               <ThumbIcon />
             </p>
           </Marker>
