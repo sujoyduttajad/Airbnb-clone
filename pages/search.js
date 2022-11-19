@@ -83,7 +83,7 @@ function Search({ searchResults }) {
         </section>
 
         <section className="inline xl:inline-flex xl:min-w-[600px]">
-          <MapboxMap />
+          <MapboxMap data={searchResults.searchData} />
         </section>
       </main>
       <Footer />
