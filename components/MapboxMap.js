@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import Map from "react-map-gl";
+import React, { useMemo, useState } from "react";
+import Map, { Marker, Popup } from "react-map-gl";
 import { getCenter } from "geolib";
 
 const MapboxMap = ({ data }) => {
@@ -18,13 +18,27 @@ const MapboxMap = ({ data }) => {
     zoom: 11,
   });
 
+  const markers = useMemo(() => data.map(result => (
+    <Marker
+      key={result.id}
+      longitude={result.long}
+      latitude={result.lat}
+      offsetLeft={-20}
+      offsetTop={-10}
+    >
+      <button></button>
+    </Marker>
+  )), [data]);
+
   return (
     <Map
       mapStyle="mapbox://styles/sujoy11/clagxis0m000b15nn826z74bn"
       mapboxAccessToken={process.env.mapbox_key}
       onMove={(evt) => setViewport(evt.viewState)}
       {...viewport}
-    ></Map>
+    >
+      {markers}
+    </Map>
   );
 };
 
