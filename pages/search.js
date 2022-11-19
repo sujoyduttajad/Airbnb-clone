@@ -70,7 +70,7 @@ function Search({ searchResults }) {
                 key={item.title}
                 img={item.img}
                 title={item.title}
-                neighbourhood={item.neighbourhood}
+                neighborhood={item.neighborhood}
                 description={item.description}
                 star={item.star}
                 price={item.price}
