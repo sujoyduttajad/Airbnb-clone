@@ -1,32 +1,28 @@
 import React, { useState } from "react";
 import Map from "react-map-gl";
-import { getCenter } from 'geolib';
+import { getCenter } from "geolib";
 
 const MapboxMap = ({ data }) => {
+  const coordinates = data.map((result) => ({
+    longitude: result.long,
+    latitude: result.lat,
+  }));
+
+  const center = getCenter(coordinates);
+
   const [viewport, setViewport] = useState({
     width: "100%",
     height: "100%",
-    latitude: 37.7577,
-    longitude: -122.4376,
+    latitude: center.latitude,
+    longitude: center.longitude,
     zoom: 11,
   });
 
-  const coordinates = data.map(result => ({
-    longitude: result.long,
-    latitude: result.lat
-  }));
-
-  // The latitude and longitude of the center of locations coordinates
-  const center = getCenter(coordinates);
-
-  console.log(center);
-  
- 
   return (
     <Map
       mapStyle="mapbox://styles/sujoy11/clagxis0m000b15nn826z74bn"
       mapboxAccessToken={process.env.mapbox_key}
-      onMove={evt => setViewport(evt.viewState)}
+      onMove={(evt) => setViewport(evt.viewState)}
       {...viewport}
     ></Map>
   );
