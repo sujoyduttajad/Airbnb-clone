@@ -70,12 +70,13 @@ function Search({ searchResults }) {
                 key={item.title}
                 img={item.img}
                 title={item.title}
-                location={item.location}
+                neighbourhood={item.neighbourhood}
                 description={item.description}
                 star={item.star}
                 price={item.price}
                 pricePerNight={item.pricePerNight}
                 noOfGuests={noOfGuests}
+                location={location}
               />
             ))}
           </div>
