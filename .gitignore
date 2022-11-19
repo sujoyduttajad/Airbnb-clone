@@ -34,3 +34,4 @@ cities.json
 
 # vercel
 .vercel
+next.config.js
