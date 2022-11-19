@@ -28,7 +28,7 @@ const InfoCard = ({
         />
       </div>
 
-      <div className="flex flex-col flex-grow lg:pl-5 md:pl-5 sm:pl-3 pt-3">
+      <div className="flex flex-col flex-grow lg:pt-0 md:pt-0 lg:pl-5 md:pl-5 sm:pl-3 pt-3">
         <div className="flex justify-between">
           <p className="text-sm text-gray-500 indent-px tracking-wider">
             {location}
