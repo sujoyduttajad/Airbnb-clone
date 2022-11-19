@@ -14,6 +14,7 @@ const MapboxMap = () => {
     <Map
       mapStyle="mapbox://styles/sujoy11/clagxis0m000b15nn826z74bn"
       mapboxAccessToken={process.env.mapbox_key}
+      onMove={evt => setViewport(evt.viewState)}
       {...viewport}
     ></Map>
   );
