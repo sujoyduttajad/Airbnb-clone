@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import Map from "react-map-gl";
 
 const MapboxMap = () => {
   return (
-    <div>Map</div>
-  )
-}
+    <Map
+      mapStyle="mapbox://styles/sujoy11/clagxis0m000b15nn826z74bn"
+      mapboxAccessToken={process.env.mapbox_key}
+    ></Map>
+  );
+};
 
-export default MapboxMap
+export default MapboxMap;
