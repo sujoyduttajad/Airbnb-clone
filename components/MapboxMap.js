@@ -1,7 +1,7 @@
-import React, { useMemo, useState } from "react";
+import React, { useState } from "react";
 import Map, { Marker, Popup } from "react-map-gl";
 import { getCenter } from "geolib";
-import Thumb from '../images/thumbtack-icon.svg'
+import { ThumbIcon } from "./SocialIcons";
 
 const MapboxMap = ({ data }) => {
   const coordinates = data.map((result) => ({
@@ -19,18 +19,6 @@ const MapboxMap = ({ data }) => {
     zoom: 11,
   });
 
-  const markers = useMemo(() => data.map(result => (
-    <Marker
-      key={result.id}
-      longitude={result.long}
-      latitude={result.lat}
-      offsetLeft={-20}
-      offsetTop={-10}
-    >
-      <img src={Thumb} alt="Thumb-pin" />
-    </Marker>
-  )), [data]);
-
   return (
     <Map
       mapStyle="mapbox://styles/sujoy11/clagxis0m000b15nn826z74bn"
@@ -38,7 +26,20 @@ const MapboxMap = ({ data }) => {
       onMove={(evt) => setViewport(evt.viewState)}
       {...viewport}
     >
-      {markers}
+      {data.map((result) => (
+        <div key={result.id} className="">
+          <Marker
+            longitude={result.long}
+            latitude={result.lat}
+            offsetLeft={-20}
+            offsetTop={-10}
+          >
+            <p className="cursor-pointer text-2xl animate-bounce">
+              <ThumbIcon />
+            </p>
+          </Marker>
+        </div>
+      ))}
     </Map>
   );
 };
