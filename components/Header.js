@@ -62,7 +62,7 @@ const Header = ({ placeholder }) => {
   };
 
   return (
-    <div className="sticky top-0 z-50 grid grid-cols-3 bg-white shadow-md p-5 md:px-10">
+    <div className="sticky top-0 z-50 grid grid-cols-3 bg-white shadow-md p-5 md:px-10 user-select-none">
       {/* Left Container */}
       <div
         onClick={() => router.push("/")}
