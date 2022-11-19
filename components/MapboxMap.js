@@ -11,6 +11,13 @@ const MapboxMap = ({ data }) => {
     zoom: 11,
   });
 
+  const coordinates = data.map(result => ({
+    longitude: result.long,
+    latitude: result.lat
+  }))
+
+  console.log(coordinates)
+ 
   return (
     <Map
       mapStyle="mapbox://styles/sujoy11/clagxis0m000b15nn826z74bn"
