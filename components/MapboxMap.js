@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import Map from "react-map-gl";
+import { getCenter } from 'geolib';
 
-const MapboxMap = () => {
+const MapboxMap = ({ data }) => {
   const [viewport, setViewport] = useState({
     width: "100%",
     height: "100%",
