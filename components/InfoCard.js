@@ -6,11 +6,12 @@ import React from "react";
 const InfoCard = ({
   img,
   title,
-  location,
+  neighbourhood,
   description,
   star,
   price,
   noOfGuests,
+  location,
 }) => {
   const calcTotal = () => {
     return price * noOfGuests;
@@ -31,7 +32,7 @@ const InfoCard = ({
       <div className="flex flex-col flex-grow lg:pt-0 md:pt-0 lg:pl-5 md:pl-5 sm:pl-3 pt-3">
         <div className="flex justify-between">
           <p className="text-sm text-gray-500 indent-px tracking-wider">
-            {location}
+            {neighbourhood}{" "}{location}
           </p>
           <HeartIcon className="h-7 cursor-pointer text-gray-500" />
         </div>
