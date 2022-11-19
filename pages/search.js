@@ -5,6 +5,7 @@ import { format } from "date-fns";
 import fsPromises from "fs/promises";
 import path from "path";
 import InfoCard from "../components/InfoCard";
+import Map from "../components/Map";
 
 export async function getServerSideProps() {
   const filePath = path.join(process.cwd(), "airbnb.json");
@@ -78,6 +79,10 @@ function Search({ searchResults }) {
               />
             ))}
           </div>
+        </section>
+
+        <section className="inline xl:inline-flex">
+          <Map />
         </section>
       </main>
       <Footer />
