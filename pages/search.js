@@ -32,6 +32,8 @@ function Search({ searchResults }) {
 
   const range = rangeFunc();
 
+  const noOfStays = searchResults.searchData.length;
+
   return (
     <div>
       <Header
@@ -42,7 +44,7 @@ function Search({ searchResults }) {
       <main className="flex">
         <section className="flex-grow pt-10 px-6">
           <p className="text-base">
-            300+ Stays from {range} - for {noOfGuests}{" "}
+            {noOfStays} Stays from {range} - for {noOfGuests}{" "}
             {noOfGuests > 1 ? "guests" : "guest"}
           </p>
           <h1 className="text-3xl font-semibold mt-2 mb-6 capitalize">
