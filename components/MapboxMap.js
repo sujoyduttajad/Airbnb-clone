@@ -1,6 +1,7 @@
 import React, { useMemo, useState } from "react";
 import Map, { Marker, Popup } from "react-map-gl";
 import { getCenter } from "geolib";
+import Thumb from '../images/thumbtack-icon.svg'
 
 const MapboxMap = ({ data }) => {
   const coordinates = data.map((result) => ({
@@ -26,7 +27,7 @@ const MapboxMap = ({ data }) => {
       offsetLeft={-20}
       offsetTop={-10}
     >
-      <button></button>
+      <img src={Thumb} alt="Thumb-pin" />
     </Marker>
   )), [data]);
 
