@@ -33,7 +33,7 @@ const MapboxMap = ({ data }) => {
             offsetLeft={-20}
             offsetTop={-10}
           >
-            <p className="cursor-pointer text-xs m-0 animate-bounce">
+            <p className="cursor-pointer text-2xl m-0 animate-bounce">
               <ThumbIcon />
             </p>
           </Marker>
