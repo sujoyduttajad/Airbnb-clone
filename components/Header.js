@@ -65,16 +65,18 @@ const Header = ({ placeholder }) => {
     <div className="sticky top-0 z-50 grid grid-cols-3 bg-white shadow-md p-5 md:px-10 user-select-none">
       {/* Left Container */}
       <div
-        onClick={() => router.push("/")}
+        
         className="relative flex items-center justify-start h-10 my-auto"
       >
         <div className="md:flex lg:flex hidden">
           <Image
             src="https://links.papareact.com/qd3"
-            layout="fill"
+            width={"100%"}
+            height={"100%"}
             objectFit="contain"
             objectPosition="left"
-            className="cursor-pointer "
+            className="cursor-pointer"
+            onClick={() => router.push("/")}
           />
         </div>
         <div className="flex lg:hidden md:hidden w-fit">
@@ -85,6 +87,7 @@ const Header = ({ placeholder }) => {
             width='40px'
             height='50px'
             className="cursor-pointer"
+            onClick={() => router.push("/")}
           />
         </div>
       </div>
