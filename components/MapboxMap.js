@@ -14,7 +14,7 @@ const MapboxMap = ({ data }) => {
   const [viewport, setViewport] = useState({
     latitude: center.latitude,
     longitude: center.longitude,
-    zoom: 11,
+    zoom: 8,
   });
 
   return (
@@ -26,7 +26,7 @@ const MapboxMap = ({ data }) => {
       {...viewport}
     >
       {data.map((result) => (
-        <div key={result.id} className="">
+        <div key={result.id} >
           <Marker
             longitude={result.long}
             latitude={result.lat}
