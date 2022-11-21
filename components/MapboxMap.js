@@ -22,7 +22,7 @@ const MapboxMap = ({ data }) => {
       mapStyle="mapbox://styles/sujoy11/clagxis0m000b15nn826z74bn"
       mapboxAccessToken={process.env.mapbox_key}
       onMove={(evt) => setViewport(evt.viewState)}
-      style={{width: 600, height: "100%"}}
+      style={{width: 600, height: "100%", cursor: "pointer"}}
       {...viewport}
     >
       {data.map((result) => (
