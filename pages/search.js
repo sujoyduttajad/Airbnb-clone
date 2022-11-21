@@ -42,7 +42,7 @@ function Search({ searchResults }) {
         }`}
       />
       <main className="flex">
-        <section className="flex-grow pt-10 px-6">
+        <section className="flex-grow pt-10 px-6 overflow-auto">
           <p className="text-base">
             {noOfStays} Stays from {range} - for {noOfGuests}{" "}
             {noOfGuests > 1 ? "guests" : "guest"}
@@ -76,7 +76,10 @@ function Search({ searchResults }) {
           </div>
         </section>
 
-        <section className="inline xl:inline-flex xl:min-w-[600px] max-h-screen overflow-hidden">
+        <section 
+          className="inline xl:inline-flex xl:min-w-[600px] max-h-screen 
+          overflow-hidden sticky top-0"
+        >
           <MapboxMap data={searchResults.searchData} />
         </section>
       </main>
