@@ -14,7 +14,7 @@ const MapboxMap = ({ data }) => {
   const [viewport, setViewport] = useState({
     latitude: center.latitude,
     longitude: center.longitude,
-    zoom: 8,
+    zoom: 11,
   });
 
   return (
