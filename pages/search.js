@@ -51,19 +51,11 @@ function Search({ searchResults }) {
             Stays in {location}
           </h1>
           <div className="hidden lg:inline-flex mb-5 space-x-3 text-gray-800 whitespace-nowrap">
-            <button className="filter-button">
-              Cancellation Flexibility
-            </button>
-            <button className="filter-button">
-              Type of Place
-            </button>
+            <button className="filter-button">Cancellation Flexibility</button>
+            <button className="filter-button">Type of Place</button>
             <button className="filter-button">Price</button>
-            <button className="filter-button">
-              Rooms and Beds
-            </button>
-            <button className="filter-button">
-              More filters
-            </button>
+            <button className="filter-button">Rooms and Beds</button>
+            <button className="filter-button">More filters</button>
           </div>
 
           <div className="flex flex-col mb-20">
@@ -84,7 +76,7 @@ function Search({ searchResults }) {
           </div>
         </section>
 
-        <section className="inline xl:inline-flex xl:min-w-[600px] overflow-hidden">
+        <section className="inline xl:inline-flex xl:min-w-[600px] max-h-screen overflow-hidden">
           <MapboxMap data={searchResults.searchData} />
         </section>
       </main>
