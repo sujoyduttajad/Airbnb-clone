@@ -54,7 +54,7 @@ const InfoCard = ({
               £{price} / night
             </p>
             <p className="text-right text-base text-gray-500 font-medium">
-              £{calcTotal()}
+              £{calcTotal()} total
             </p>
           </div>
         </div>
