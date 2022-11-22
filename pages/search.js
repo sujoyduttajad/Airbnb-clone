@@ -1,7 +1,7 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { useRouter } from "next/router";
-import { format } from "date-fns";
+import { format, subDays, formatDistance } from "date-fns";
 import fsPromises from "fs/promises";
 import path from "path";
 import InfoCard from "../components/InfoCard";
@@ -32,6 +32,24 @@ function Search({ searchResults }) {
 
   const range = rangeFunc();
 
+  const noOfDays = () => {
+    const result = formatDistance(
+      subDays(new Date(startDate), 0),
+      new Date(endDate)
+    );
+    let diff;
+    if (result.includes("day")) {
+      diff = result.replace("day", "");
+    } else if (result.includes("days")) {
+      diff = result.replace("days", "");
+    } else {
+      return;
+    }
+    return Number(diff);
+  };
+
+  console.log(noOfDays());
+
   const noOfStays = searchResults.searchData.length;
 
   return (
@@ -42,7 +60,7 @@ function Search({ searchResults }) {
         }`}
       />
       <main className="flex">
-        <section className="flex-grow pt-10 px-6 overflow-auto">
+        <section className="flex-grow pt-10 px-6">
           <p className="text-base">
             {noOfStays} Stays from {range} - for {noOfGuests}{" "}
             {noOfGuests > 1 ? "guests" : "guest"}
@@ -76,7 +94,7 @@ function Search({ searchResults }) {
           </div>
         </section>
 
-        <section 
+        <section
           className="inline xl:inline-flex xl:min-w-[600px] max-h-screen 
           overflow-hidden sticky top-0"
         >
