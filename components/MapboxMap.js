@@ -26,7 +26,7 @@ const MapboxMap = ({ data }) => {
       {...viewport}
     >
       {data.map((result) => (
-        <div key={result.id} >
+        <div key={result.lat}>
           <Marker
             longitude={result.long}
             latitude={result.lat}
