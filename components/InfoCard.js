@@ -11,10 +11,11 @@ const InfoCard = ({
   star,
   price,
   noOfGuests,
+  noOfDays,
   location,
 }) => {
   const calcTotal = () => {
-    return price * noOfGuests;
+    return price * noOfGuests * noOfDays;
   };
 
   return (
