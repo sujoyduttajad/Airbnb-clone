@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import Map, { Marker, Popup } from "react-map-gl";
 import { getCenter } from "geolib";
 import { ThumbIcon } from "./SocialIcons";
@@ -17,12 +17,17 @@ const MapboxMap = ({ data }) => {
     zoom: 11,
   });
 
+  const mapRef = useRef();
+ 
   return (
     <Map
+      ref={mapRef}
       mapStyle="mapbox://styles/sujoy11/clagxis0m000b15nn826z74bn"
       mapboxAccessToken={process.env.mapbox_key}
       onMove={(evt) => setViewport(evt.viewState)}
-      style={{width: 600, height: "100%", cursor: "grab"}}
+      style={{width: 600, height: "100%", cursor: "auto"}}
+      dragPan={true}
+      boxZoom={true}
       {...viewport}
     >
       {data.map((result) => (
