@@ -34,21 +34,12 @@ function Search({ searchResults }) {
 
   const noOfDays = () => {
     const result = formatDistance(
-      subDays(new Date(startDate), 0),
+      subDays(new Date(startDate), 1),
       new Date(endDate)
     );
-    let diff;
-    if (result.includes("day")) {
-      diff = result.replace("day", "");
-    } else if (result.includes("days")) {
-      diff = result.replace("days", "");
-    } else {
-      return;
-    }
+    let diff = result.match(/\d+/g).toString();
     return Number(diff);
   };
-
-  console.log(noOfDays());
 
   const noOfStays = searchResults.searchData.length;
 
@@ -88,6 +79,7 @@ function Search({ searchResults }) {
                 price={item.price}
                 pricePerNight={item.pricePerNight}
                 noOfGuests={noOfGuests}
+                noOfDays={noOfDays()}
                 location={location}
               />
             ))}
