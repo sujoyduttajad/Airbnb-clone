@@ -28,9 +28,12 @@ const Header = ({ placeholder }) => {
   };
 
   const handleSelect = (ranges) => {
+    console.log(ranges.selection.startDate - ranges.selection.endDate)
     setStartDate(ranges.selection.startDate);
     setEndDate(ranges.selection.endDate);
   };
+
+  
 
   const resetInput = () => {
     setSearchInput("");
