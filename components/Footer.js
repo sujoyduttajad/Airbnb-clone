@@ -18,46 +18,49 @@ const Footer = () => {
             Airbnb
           </h5>
           <p>
-            <a className="links" href="/">
+            <Link className="links" href="/">
               How Airbnb works
-            </a>
+            </Link>
           </p>
           <p>
-            <a
+            <Link
               className="links"
               href="https://news.airbnb.com/?region=India"
               target="_blank"
+              rel="noreferrer"
             >
               Newsroom
-            </a>
+            </Link>
           </p>
           <p>
-            <a className="links" href="/">
+            <Link className="links" href="/">
               Investors
-            </a>
+            </Link>
           </p>
           <p>
-            <a className="links" href="/">
+            <Link className="links" href="/">
               Careers
-            </a>
+            </Link>
           </p>
           <p>
-            <a
+            <Link
               href="https://github.com/sujoyduttajad/Airbnb-clone"
               target="_blank"
+              rel="noreferrer"
               className="links text-[#FD585E]"
             >
               Airbnb 1.0 GitHub
-            </a>
+            </Link>
           </p>
           <p>
-            <a
+            <Link
               className="links"
               href="https://github.com/sujoyduttajad"
               target="_blank"
+              rel="noreferrer"
             >
               My GitHub Profile
-            </a>
+            </Link>
           </p>
         </div>
         <div className="space-y-4 text-xs text-gray-800 pr-5">
@@ -65,38 +68,39 @@ const Footer = () => {
             Community
           </h5>
           <p>
-            <a className="links" href="/" target="_blank">
+            <Link className="links" href="/" >
               Accessibility
-            </a>
+            </Link>
           </p>
           <p>
-            <a className="links" href="/" target="_blank">
+            <Link className="links" href="/" >
               Visit our community forum
-            </a>
+            </Link>
           </p>
           <p>
-            <a className="links" href="/" target="_blank">
+            <Link className="links" href="/" >
               Airbnb.org
-            </a>
+            </Link>
           </p>
           <p>
-            <a className="links" href="/" target="_blank">
+            <Link className="links" href="/" >
               Support Afgan refugees
-            </a>
+            </Link>
           </p>
           <p>
-            <a className="links" href="/" target="_blank">
+            <Link className="links" href="/" >
               Combat discrimination
-            </a>
+            </Link>
           </p>
           <p>
-            <a
+            <Link
               className="links"
               href="https://sujoyduttaportfolio.gatsbyjs.io/"
               target="_blank"
+              rel="noreferrer"
             >
               My Portfolio
-            </a>
+            </Link>
           </p>
         </div>
         <div className="space-y-4 text-xs text-gray-800 pr-5">
@@ -104,34 +108,34 @@ const Footer = () => {
             Hosting
           </h5>
           <p>
-            <a className="links" href="/">
+            <Link className="links" href="/">
               Try Hosting
-            </a>
+            </Link>
           </p>
           <p>
-            <a className="links" href="/">
+            <Link className="links" href="/">
               Explore hosting resources
-            </a>
+            </Link>
           </p>
           <p>
-            <a className="links" href="/">
+            <Link className="links" href="/">
               How to host responsibly
-            </a>
+            </Link>
           </p>
           <p>
-            <a className="links" href="/">
+            <Link className="links" href="/">
               Privacy Policy
-            </a>
+            </Link>
           </p>
           <p>
-            <a className="links" href="/">
+            <Link className="links" href="/">
               Terms and Conditions
-            </a>
+            </Link>
           </p>
           <p>
-            <a className="links text-[#FF385C]" href="#">
+            <Link className="links text-[#FF385C]" href="#">
               Airbnb 2.0(Build soon)
-            </a>
+            </Link>
           </p>
         </div>
         <div className="space-y-4 text-xs text-gray-800">
@@ -139,75 +143,80 @@ const Footer = () => {
             Support
           </h5>
           <p>
-            <a className="links" href="/">
+            <Link className="links" href="/">
               Help Centre
-            </a>
+            </Link>
           </p>
           <p>
-            <a
+            <Link
               className="links"
               href="https://www.airbnb.co.in/aircover"
               target="_blank"
+              rel="noreferrer"
             >
               AirCover
-            </a>
+            </Link>
           </p>
           <p>
-            <a className="links" href="/">
+            <Link className="links" href="/">
               Safety Information
-            </a>
+            </Link>
           </p>
           <p>
-            <a className="links" href="/">
+            <Link className="links" href="/">
               Supporting people with disabilities
-            </a>
+            </Link>
           </p>
           <p>
-            <a className="links" href="/">
+            <Link className="links" href="/">
               Cancellation options
-            </a>
+            </Link>
           </p>
           <p>
-            <a className="links" href="/">
+            <Link className="links" href="/">
               Report a neighbourhood concern
-            </a>
+            </Link>
           </p>
         </div>
       </section>
       <div className="py-4 pt-10 bg-gray-100 text-gray-600 flex flex-wrap justify-around items-center w-full">
         <p>© {currYear()} Airbnb, Inc. </p>
         <div className="flex justify-evenly w-32">
-          <a
+          <Link
             className="p-3 hover:bg-gray-200 rounded-full"
             href="https://www.facebook.com/AirbnbIndia"
             target={"_blank"}
+            rel="noreferrer"
           >
             <FacebookIcon />
-          </a>
-          <a
+          </Link>
+          <Link
             className="p-3 hover:bg-gray-200 rounded-full"
             href="https://twitter.com/airbnb_in"
             target={"_blank"}
+            rel="noreferrer"
           >
             <TwitterIcon />
-          </a>
-          <a
+          </Link>
+          <Link
             className="p-3 hover:bg-gray-200 rounded-full"
             href="https://www.instagram.com/airbnb/"
             target={"_blank"}
+            rel="noreferrer"
           >
             <InstaIcon />
-          </a>
+          </Link>
         </div>
         <p className="font-semibold mt-6 lg:mt-0 md:mt-0">
           Developed by{" "}
-          <a
+          <Link
             href="https://sujoyduttaportfolio.gatsbyjs.io/"
             target={"_blank"}
+            rel="noreferrer"
             className="text-red-400 links"
           >
             Sujoy Dutta
-          </a>
+          </Link>
         </p>
       </div>
     </footer>
