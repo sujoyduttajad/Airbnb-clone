@@ -27,6 +27,7 @@ const InfoCard = ({
           objectFit="cover"
           priority={true}
           className="rounded-2xl"
+          alt="Location Interior Image"
         />
       </div>
 
