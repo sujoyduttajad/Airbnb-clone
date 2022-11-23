@@ -12,6 +12,7 @@ import "react-date-range/dist/theme/default.css"; // theme css file
 import { DateRangePicker } from "react-date-range";
 import { useRouter } from "next/router";
 import airbnbIcon from "../images/airbnb-icon.svg"
+import airbnb from "../images/airbnb-ar21.svg"
 
 const Header = ({ placeholder }) => {
   const [searchInput, setSearchInput] = useState();
@@ -70,7 +71,7 @@ const Header = ({ placeholder }) => {
       >
         <div className="md:flex lg:flex hidden">
           <Image
-            src="https://links.papareact.com/qd3"
+            src={airbnb}
             width={"100%"}
             height={"100%"}
             objectFit="contain"
