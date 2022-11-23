@@ -77,6 +77,7 @@ const Header = ({ placeholder }) => {
             objectPosition="left"
             className="cursor-pointer"
             onClick={() => router.push("/")}
+            alt="Airbnb logo"
           />
         </div>
         <div className="flex lg:hidden md:hidden w-fit">
@@ -88,6 +89,7 @@ const Header = ({ placeholder }) => {
             height='50px'
             className="cursor-pointer"
             onClick={() => router.push("/")}
+            alt="Airbnb logo"
           />
         </div>
       </div>
