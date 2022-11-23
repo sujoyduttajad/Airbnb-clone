@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { FacebookIcon, InstaIcon, TwitterIcon } from "./SocialIcons";
 
