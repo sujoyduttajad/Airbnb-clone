@@ -26,7 +26,7 @@ const MapboxMap = ({ data }) => {
       ref={mapRef}
       mapStyle="mapbox://styles/sujoy11/clagxis0m000b15nn826z74bn"
       mapboxAccessToken={process.env.mapbox_key}
-      onMove={(evt) => setViewport(evt.viewState)}
+      onMove={(nextViewport) => setViewport(nextViewport)}
       style={{ width: 600, height: "100%", cursor: "auto" }}
       dragPan={true}
       boxZoom={true}
@@ -37,8 +37,8 @@ const MapboxMap = ({ data }) => {
           <Marker
             longitude={result.long}
             latitude={result.lat}
-            offsetLeft={-20}
-            offsetTop={-10}
+            // offsetLeft={-20}
+            // offsetTop={-10}
           >
             <p
               onClick={() => setSelectedLocation(result)}
@@ -54,6 +54,7 @@ const MapboxMap = ({ data }) => {
                   longitude={result.long}
                   anchor="center"
                   onClose={() => setSelectedLocation({})}
+                  className="bg-white w-fit inline-flex flex-row user-select-none text-gray-600 p-3 font-medium"
                 >
                   {result.title}
                 </Popup>
