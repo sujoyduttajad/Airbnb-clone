@@ -2,7 +2,6 @@ import React, { useRef, useState } from "react";
 import Map, { Marker, Popup } from "react-map-gl";
 import { getCenter } from "geolib";
 
-
 const MapboxMap = ({ data }) => {
   const [selectedLocation, setSelectedLocation] = useState({});
 
@@ -37,8 +36,8 @@ const MapboxMap = ({ data }) => {
           <Marker
             longitude={result.long}
             latitude={result.lat}
-            // offsetLeft={-20}
-            // offsetTop={-10}
+            offsetLeft={-20}
+            offsetTop={-10}
           >
             <p
               onClick={() => setSelectedLocation(result)}
@@ -46,23 +45,25 @@ const MapboxMap = ({ data }) => {
               aria-label="push-pin"
             >
               📌
-              {/* Popup renders onClick of the Marker */}
-              {selectedLocation.long === result.long ? (
-                <Popup
-                  closeOnClick={true}
-                  latitude={result.lat}
-                  longitude={result.long}
-                  anchor="center"
-                  onClose={() => setSelectedLocation({})}
-                  className="bg-white w-fit inline-flex flex-row user-select-none text-gray-600 p-3 font-medium"
-                >
-                  {result.title}
-                </Popup>
-              ) : (
-                false
-              )}
             </p>
           </Marker>
+          {/* Popup renders onClick of the Marker */}
+          {selectedLocation.long === result.long ? (
+            <Popup
+              closeOnClick={true}
+              latitude={result.lat}
+              longitude={result.long}
+              anchor="top-right"
+              offset={5}
+              onClose={() => setSelectedLocation({})}
+              className="bg-white w-fit inline-flex flex-row user-select-none 
+                  text-gray-600 p-2 font-medium rounded-lg "
+            >
+              {result.title}
+            </Popup>
+          ) : (
+            false
+          )}
         </div>
       ))}
     </Map>
