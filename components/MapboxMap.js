@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import Map, { Marker, Popup } from "react-map-gl";
 import { getCenter } from "geolib";
-import { ThumbIcon } from "./SocialIcons";
+
 
 const MapboxMap = ({ data }) => {
   const [selectedLocation, setSelectedLocation] = useState({});
@@ -45,7 +45,6 @@ const MapboxMap = ({ data }) => {
               className="cursor-pointer text-2xl m-0 animate-bounce"
               aria-label="push-pin"
             >
-              {/* <ThumbIcon /> */}
               📌
               {/* Popup renders onClick of the Marker */}
               {selectedLocation.long === result.long ? (
