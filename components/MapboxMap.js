@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import Map, { Marker, Popup } from "react-map-gl";
+import Map, { FullscreenControl, Marker, Popup } from "react-map-gl";
 import { getCenter } from "geolib";
 
 const MapboxMap = ({ data }) => {
@@ -26,7 +26,7 @@ const MapboxMap = ({ data }) => {
       mapStyle="mapbox://styles/sujoy11/clagxis0m000b15nn826z74bn"
       mapboxAccessToken={process.env.mapbox_key}
       onMove={(nextViewport) => setViewport(nextViewport)}
-      style={{ width: 600, height: "100%", cursor: "auto" }}
+      style={{ width: 600, height: "100vh", cursor: "auto" }}
       dragPan={true}
       boxZoom={true}
       {...viewport}
@@ -66,6 +66,7 @@ const MapboxMap = ({ data }) => {
           )}
         </div>
       ))}
+      <FullscreenControl position="top-right" className="absolute top-0 left-0" />
     </Map>
   );
 };
