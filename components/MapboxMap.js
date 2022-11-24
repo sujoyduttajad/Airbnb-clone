@@ -23,8 +23,8 @@ const MapboxMap = ({ data }) => {
   return (
     <Map
       ref={mapRef}
-      mapStyle="mapbox://styles/sujoy11/clagxis0m000b15nn826z74bn"
-      mapboxAccessToken={process.env.mapbox_key}
+      mapStyle={process.env.NEXT_PUBLIC_MAPBOX_URL}
+      mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_KEY}
       onMove={(nextViewport) => setViewport(nextViewport)}
       style={{ width: 600, height: "100vh", cursor: "auto" }}
       dragPan={true}
