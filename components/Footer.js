@@ -27,8 +27,6 @@ const Footer = () => {
             <Link
               className="links"
               href="https://news.airbnb.com/?region=India"
-              target="_blank"
-              rel="noreferrer"
             >
               Newsroom
             </Link>
@@ -46,20 +44,13 @@ const Footer = () => {
           <p>
             <Link
               href="https://github.com/sujoyduttajad/Airbnb-clone"
-              target="_blank"
-              rel="noreferrer"
               className="links text-[#FD585E]"
             >
               Airbnb 1.0 GitHub
             </Link>
           </p>
           <p>
-            <Link
-              className="links"
-              href="https://github.com/sujoyduttajad"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <Link className="links" href="https://github.com/sujoyduttajad">
               My GitHub Profile
             </Link>
           </p>
@@ -69,27 +60,27 @@ const Footer = () => {
             Community
           </h5>
           <p>
-            <Link className="links" href="/" >
+            <Link className="links" href="/">
               Accessibility
             </Link>
           </p>
           <p>
-            <Link className="links" href="/" >
+            <Link className="links" href="/">
               Visit our community forum
             </Link>
           </p>
           <p>
-            <Link className="links" href="/" >
+            <Link className="links" href="/">
               Airbnb.org
             </Link>
           </p>
           <p>
-            <Link className="links" href="/" >
+            <Link className="links" href="/">
               Support Afgan refugees
             </Link>
           </p>
           <p>
-            <Link className="links" href="/" >
+            <Link className="links" href="/">
               Combat discrimination
             </Link>
           </p>
@@ -97,8 +88,6 @@ const Footer = () => {
             <Link
               className="links"
               href="https://sujoyduttaportfolio.gatsbyjs.io/"
-              target="_blank"
-              rel="noreferrer"
             >
               My Portfolio
             </Link>
@@ -149,12 +138,7 @@ const Footer = () => {
             </Link>
           </p>
           <p>
-            <Link
-              className="links"
-              href="https://www.airbnb.co.in/aircover"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <Link className="links" href="https://www.airbnb.co.in/aircover">
               AirCover
             </Link>
           </p>
@@ -186,24 +170,18 @@ const Footer = () => {
           <Link
             className="p-3 hover:bg-gray-200 rounded-full"
             href="https://www.facebook.com/AirbnbIndia"
-            target={"_blank"}
-            rel="noreferrer"
           >
             <FacebookIcon />
           </Link>
           <Link
             className="p-3 hover:bg-gray-200 rounded-full"
             href="https://twitter.com/airbnb_in"
-            target={"_blank"}
-            rel="noreferrer"
           >
             <TwitterIcon />
           </Link>
           <Link
             className="p-3 hover:bg-gray-200 rounded-full"
             href="https://www.instagram.com/airbnb/"
-            target={"_blank"}
-            rel="noreferrer"
           >
             <InstaIcon />
           </Link>
@@ -212,8 +190,6 @@ const Footer = () => {
           Developed by{" "}
           <Link
             href="https://sujoyduttaportfolio.gatsbyjs.io/"
-            target={"_blank"}
-            rel="noreferrer"
             className="text-red-400 links"
           >
             Sujoy Dutta
