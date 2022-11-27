@@ -32,6 +32,7 @@ function Search({ searchResults }) {
 
   const range = rangeFunc();
 
+  // Calculate no of days between two days
   const noOfDays = () => {
     const result = formatDistance(
       subDays(new Date(startDate), 1),
