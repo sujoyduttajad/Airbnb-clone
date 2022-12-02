@@ -3,7 +3,7 @@ import banner from '../images/banner.webp'
 
 const Banner = () => {
   return (
-    <div className="relative h-[300px] sm:h-[400px] lg:h-[500px] xl:h-[600px] 2xl:h-[900px]">
+    <div className="relative h-[300px] sm:h-[400px] lg:h-[500px] xl:h-[650px] 2xl:h-[800px]">
       <Image
         src={banner}
         layout="fill"
