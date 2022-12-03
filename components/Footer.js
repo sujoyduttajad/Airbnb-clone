@@ -19,12 +19,12 @@ const Footer = () => {
             Airbnb
           </h5>
           <p>
-            <Link className="links" href="/">
+            <Link passHref legacyBehavior className="links" href="/">
               How Airbnb works
             </Link>
           </p>
           <p>
-            <Link
+            <Link passHref legacyBehavior
               className="links"
               href="https://news.airbnb.com/?region=India"
             >
@@ -32,17 +32,17 @@ const Footer = () => {
             </Link>
           </p>
           <p>
-            <Link className="links" href="/">
+            <Link passHref legacyBehavior className="links" href="/">
               Investors
             </Link>
           </p>
           <p>
-            <Link className="links" href="/">
+            <Link passHref legacyBehavior className="links" href="/">
               Careers
             </Link>
           </p>
           <p>
-            <Link
+            <Link passHref legacyBehavior
               href="https://github.com/sujoyduttajad/Airbnb-clone"
               className="links text-[#FD585E]"
             >
@@ -50,7 +50,7 @@ const Footer = () => {
             </Link>
           </p>
           <p>
-            <Link className="links" href="https://github.com/sujoyduttajad">
+            <Link passHref legacyBehavior className="links" href="https://github.com/sujoyduttajad">
               My GitHub Profile
             </Link>
           </p>
@@ -60,32 +60,32 @@ const Footer = () => {
             Community
           </h5>
           <p>
-            <Link className="links" href="/">
+            <Link passHref legacyBehavior className="links" href="/">
               Accessibility
             </Link>
           </p>
           <p>
-            <Link className="links" href="/">
+            <Link passHref legacyBehavior className="links" href="/">
               Visit our community forum
             </Link>
           </p>
           <p>
-            <Link className="links" href="/">
+            <Link passHref legacyBehavior className="links" href="/">
               Airbnb.org
             </Link>
           </p>
           <p>
-            <Link className="links" href="/">
+            <Link passHref legacyBehavior className="links" href="/">
               Support Afgan refugees
             </Link>
           </p>
           <p>
-            <Link className="links" href="/">
+            <Link passHref legacyBehavior className="links" href="/">
               Combat discrimination
             </Link>
           </p>
           <p>
-            <Link
+            <Link passHref legacyBehavior
               className="links"
               href="https://sujoyduttaportfolio.gatsbyjs.io/"
             >
@@ -98,32 +98,32 @@ const Footer = () => {
             Hosting
           </h5>
           <p>
-            <Link className="links" href="/">
+            <Link passHref legacyBehavior className="links" href="/">
               Try Hosting
             </Link>
           </p>
           <p>
-            <Link className="links" href="/">
+            <Link passHref legacyBehavior className="links" href="/">
               Explore hosting resources
             </Link>
           </p>
           <p>
-            <Link className="links" href="/">
+            <Link passHref legacyBehavior className="links" href="/">
               How to host responsibly
             </Link>
           </p>
           <p>
-            <Link className="links" href="/">
+            <Link passHref legacyBehavior className="links" href="/">
               Privacy Policy
             </Link>
           </p>
           <p>
-            <Link className="links" href="/">
+            <Link passHref legacyBehavior className="links" href="/">
               Terms and Conditions
             </Link>
           </p>
           <p>
-            <Link className="links text-[#FF385C]" href="#">
+            <Link passHref legacyBehavior className="links text-[#FF385C]" href="#">
               Airbnb 2.0(Build soon)
             </Link>
           </p>
@@ -133,32 +133,32 @@ const Footer = () => {
             Support
           </h5>
           <p>
-            <Link className="links" href="/">
+            <Link passHref legacyBehavior className="links" href="/">
               Help Centre
             </Link>
           </p>
           <p>
-            <Link className="links" href="https://www.airbnb.co.in/aircover">
+            <Link passHref legacyBehavior className="links" href="https://www.airbnb.co.in/aircover">
               AirCover
             </Link>
           </p>
           <p>
-            <Link className="links" href="/">
+            <Link passHref legacyBehavior className="links" href="/">
               Safety Information
             </Link>
           </p>
           <p>
-            <Link className="links" href="/">
+            <Link passHref legacyBehavior className="links" href="/">
               Supporting people with disabilities
             </Link>
           </p>
           <p>
-            <Link className="links" href="/">
+            <Link passHref legacyBehavior className="links" href="/">
               Cancellation options
             </Link>
           </p>
           <p>
-            <Link className="links" href="/">
+            <Link passHref legacyBehavior className="links" href="/">
               Report a neighbourhood concern
             </Link>
           </p>
@@ -167,19 +167,19 @@ const Footer = () => {
       <div className="py-4 pt-10 bg-gray-100 text-gray-600 flex flex-wrap justify-around items-center w-full">
         <p>© {currYear()} Airbnb, Inc. </p>
         <div className="flex justify-evenly w-32">
-          <Link
+          <Link passHref legacyBehavior
             className="p-3 hover:bg-gray-200 rounded-full"
             href="https://www.facebook.com/AirbnbIndia"
           >
             <FacebookIcon />
           </Link>
-          <Link
+          <Link passHref legacyBehavior
             className="p-3 hover:bg-gray-200 rounded-full"
             href="https://twitter.com/airbnb_in"
           >
             <TwitterIcon />
           </Link>
-          <Link
+          <Link passHref legacyBehavior
             className="p-3 hover:bg-gray-200 rounded-full"
             href="https://www.instagram.com/airbnb/"
           >
@@ -188,7 +188,7 @@ const Footer = () => {
         </div>
         <p className="font-semibold mt-6 lg:mt-0 md:mt-0">
           Developed by{" "}
-          <Link
+          <Link passHref legacyBehavior
             href="https://sujoyduttaportfolio.gatsbyjs.io/"
             className="text-red-400 links"
           >
