@@ -174,7 +174,7 @@ const Footer = () => {
             </Link>
           </p>
           <p>
-            <Link passHref legacyBehavior className="links" href="/">
+            <Link passHref legacyBehavior className="hover:underline" href="/">
               Cancellation options
             </Link>
           </p>
@@ -219,7 +219,7 @@ const Footer = () => {
             passHref
             legacyBehavior
             href="https://sujoyduttaportfolio.gatsbyjs.io/"
-            className="text-red-400 links"
+            className="text-red-400"
           >
             Sujoy Dutta
           </Link>
