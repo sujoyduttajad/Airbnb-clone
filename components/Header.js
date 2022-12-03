@@ -13,6 +13,7 @@ import { DateRangePicker } from "react-date-range";
 import { useRouter } from "next/router";
 import airbnbIcon from "../images/airbnb-icon.svg"
 import airbnb from "../images/airbnb-ar21.svg"
+import Dropdown from "./Dropdown";
 
 const Header = ({ placeholder }) => {
   const [searchInput, setSearchInput] = useState();
@@ -126,13 +127,16 @@ const Header = ({ placeholder }) => {
         <div className="md:flex lg:flex hidden">
           <GlobeAltIcon className="h-6 cursor-pointer hover:bg-gray-100 rounded-full" />
         </div>
-        <div
+        <button
+        id="dropdownInformationButton"
+        data-dropdown-toggle="dropdownInformation"
           className="flex items-center space-x-2 border-2 p-2 rounded-full hover:shadow-xl 
         transition duration-150 cursor-pointer"
         >
           <MenuIcon className="h-6 " />
           <UserCircleIcon className="h-6 " />
-        </div>
+        </button>
+        <Dropdown />
       </div>
 
       {searchInput && (
