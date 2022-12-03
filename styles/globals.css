@@ -3,6 +3,7 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+
 @layer components {
   .filter-button {
     @apply px-4 py-1 border rounded-full cursor-pointer hover:shadow-lg font-normal active:scale-95 
