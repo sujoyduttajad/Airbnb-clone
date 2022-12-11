@@ -66,7 +66,10 @@ const MapboxMap = ({ data }) => {
           )}
         </div>
       ))}
-      <FullscreenControl position="top-right" className="absolute top-0 left-0" />
+      <FullscreenControl
+        position="top-right"
+        className="absolute top-0 left-0"
+      />
     </Map>
   );
 };
